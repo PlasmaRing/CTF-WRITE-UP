@@ -7,8 +7,8 @@ MAR 15 - MAR 30 | 2022
 |----|---------------------|-----------------------|---------|----------------------------
 | 1  | file-run1 | Reverse Engineering | 100 | picoCTF{U51N6_Y0Ur_F1r57_F113_ac61264e} 
 | 2  | file-run2 | Reverse Engineering | 100 | picoCTF{F1r57_4rgum3n7_c2db2786}
-| 3  | GDB Test Drive | Reverse Engineering | 100 | 
-| 4  | patchme.py | Reverse Engineering | 100 | 
+| 3  | GDB Test Drive | Reverse Engineering | 100 | picoCTF{d3bugg3r_dr1v3_7e8f2155}
+| 4  | patchme.py | Reverse Engineering | 100 | picoCTF{p47ch1ng_l1f3_h4ck_e40c120e}
 | 5  | Safe Opener | Reverse Engineering | 100 | 
 | 6  | unpackme.py | Reverse Engineering | 100 | 
 | 7  | bloat.py | Reverse Engineering | 200 | 
@@ -121,28 +121,86 @@ $ gdb gdbme
 ## patchme.py
 
 **Description**  
+Can you get the flag?  
+Run this [Python program](https://github.com/PlasmaRing/CTF-WRITE-UP/blob/a1e50c69ec32ade2299b7f11163bb2e41434b43d/picoCTF%202022/FILE/patchmeflag/patchme.flag.py) in the same directory as this [encrypted flag](https://github.com/PlasmaRing/CTF-WRITE-UP/blob/a1e50c69ec32ade2299b7f11163bb2e41434b43d/picoCTF%202022/FILE/patchmeflag/flag.txt.enc)
+
+**Solution [INA]**  
+1. Download kedua file dan masukan kedua file di folder yang sama
+2. Buka file `patchme.flag.py`
+3. Ubah input __user_pw__ menjadi sama dengan syarat mendapatkan flag
+4. Buka terminal dan pergi ke __directory file__
+5. Ketik `python patchme.flag.py` untuk menjalankan file
+6. FLAG DIPEROLEH
 
 ![PICO1](https://user-images.githubusercontent.com/92077284/160290740-f43a3c21-cc52-4874-b9a2-4c89984fb8de.png)
 ![PICO2](https://user-images.githubusercontent.com/92077284/160290741-aca7b1c8-b14c-400f-a50f-3cbd7ff115e7.png)
 
+**Flag**  
+`picoCTF{p47ch1ng_l1f3_h4ck_e40c120e}`
+
 
 ## Safe Opener
-tES
+
+**Description**  
+Can you open this safe?  
+I forgot the key to my safe but this [program]() is supposed to help me with retrieving the lost key. Can you help me unlock my safe?  
+Put the password you recover into the picoCTF flag format like:  
+__picoCTF{password}__
+
+**Solution [INA]**  
+
+**Flag**  
+``
+
 
 ## unpackme.py
-Tes
+
+**Description**  
+
+**Solution [INA]**  
+
+**Flag**  
+``
+
 
 ## bloat.py
-tES
+
+**Description**  
+
+**Solution [INA]**  
+
+**Flag**  
+``
+
 
 ## Fresh Java
-Tes
+
+**Description**  
+
+**Solution [INA]**  
+
+**Flag**  
+``
+
 
 ## Bbbbloat
-tES
+
+**Description**  
+
+**Solution [INA]**  
+
+**Flag**  
+``
+
 
 ## unpackme
-Tes
+
+**Description**  
+
+**Solution [INA]**  
+
+**Flag**  
+``
 
 
 # Cryptography
