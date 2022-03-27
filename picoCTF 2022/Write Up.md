@@ -79,8 +79,11 @@ Try running it and add the phrase "Hello!" with a space in front (i.e. **"./run 
 4. Ketik `./'run(1)' Hello!`
 5. FLAG DIPEROLEH
 
+![PICOCTF png](https://user-images.githubusercontent.com/92077284/160289524-7bde6d04-15f6-4933-9c6c-ec868e8d43ee.png)
+
 **Flag**  
 `picoCTF{F1r57_4rgum3n7_c2db2786}`
+
 
 ## GDB Test Drive
 tES
