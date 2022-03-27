@@ -5,7 +5,7 @@ MAR 15 - MAR 30 | 2022
 
 | No | Title               | Category              | Points  | Flag
 |----|---------------------|-----------------------|---------|----------------------------
-| 1  | file-run1 | Reverse Engineering | 100 | 
+| 1  | file-run1 | Reverse Engineering | 100 | picoCTF{U51N6_Y0Ur_F1r57_F113_ac61264e} 
 | 2  | file-run2 | Reverse Engineering | 100 | 
 | 3  | GDB Test Drive | Reverse Engineering | 100 | 
 | 4  | patchme.py | Reverse Engineering | 100 | 
