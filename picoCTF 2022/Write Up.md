@@ -41,7 +41,7 @@ MAR 15 - MAR 30 | 2022
 
 **Description**  
 A program has been provided to you, what happens if you try to run it on the command line?
-Download the program [here](https://github.com/PlasmaRing/CTF-WRITE-UP/blob/399fcc888ebd385c9ab3cc2cdbfbef041ddeb30f/picoCTF%202022/FILE/run%20(file-run1))
+Download the program [here](https://github.com/PlasmaRing/CTF-WRITE-UP/blob/86ca38d98bcde32d0d779086bfb8bd680efa27e5/picoCTF%202022/FILE/run)
 
 **Hints 1**  
 To run the program at all, you must make it executable (i.e. **$ chmod +x run**)
@@ -49,12 +49,15 @@ To run the program at all, you must make it executable (i.e. **$ chmod +x run**)
 **Hints 2**  
 Try running it by adding a '.' in front of the path to the file (i.e. **$ ./run**)
 
-**Solution**  
-1. Download the file
-2. 
+**Solution [INA]**  
+1. Download `run` file
+2. Buka terminal, dan pergi ke __directory file__
+3. Ketik `chmod +x run` untuk membuat file __executable__
+4. Ketik `./run`
+5. FLAG DIPEROLEH
 
 **Flag**  
-``
+`picoCTF{U51N6_Y0Ur_F1r57_F113_ac61264e}`
 
 ## file-run2
 Tes
