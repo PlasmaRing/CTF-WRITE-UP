@@ -10,7 +10,7 @@ MAR 15 - MAR 30 | 2022
 | 3  | GDB Test Drive | Reverse Engineering | 100 | picoCTF{d3bugg3r_dr1v3_7e8f2155}
 | 4  | patchme.py | Reverse Engineering | 100 | picoCTF{p47ch1ng_l1f3_h4ck_e40c120e}
 | 5  | Safe Opener | Reverse Engineering | 100 | picoCTF{pl3as3_l3t_m3_1nt0_th3_saf3}
-| 6  | unpackme.py | Reverse Engineering | 100 | 
+| 6  | unpackme.py | Reverse Engineering | 100 | picoCTF{175_chr157m45_616d21a3}
 | 7  | bloat.py | Reverse Engineering | 200 | 
 | 8  | Fresh Java | Reverse Engineering | 200 | 
 | 9  | Bbbbloat | Reverse Engineering | 300 | 
@@ -163,11 +163,22 @@ __picoCTF{password}__
 ## unpackme.py
 
 **Description**  
+Can you get the flag?  
+Reverse engineer this [Python program](https://github.com/PlasmaRing/CTF-WRITE-UP/blob/21ba29aaece9f670d034ed39b03b1200fa447ce9/picoCTF%202022/FILE/unpackme.flag.py)
 
 **Solution [INA]**  
+1. Download file `unpackme.flag.py`
+2. Buka file dan tambahkan `print(plain)` di baris paling bawah, lalu simpan
+3. Buka terminal dan pergi ke __directory file__
+4. Ketik `python3 unpackme.flag.py` untuk menjalankan file
+5. Input password secara random
+6. FLAG DIPEROLEH
+
+![PICO1](https://user-images.githubusercontent.com/92077284/160292135-6d160061-24b0-4186-84e8-e1e37a2d5208.png)
+![PICO2](https://user-images.githubusercontent.com/92077284/160292137-90b98a05-70c7-4458-88ed-6f059037325e.png)
 
 **Flag**  
-``
+`picoCTF{175_chr157m45_616d21a3}`
 
 
 ## bloat.py
