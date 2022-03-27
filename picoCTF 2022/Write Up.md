@@ -6,7 +6,7 @@ MAR 15 - MAR 30 | 2022
 | No | Title               | Category              | Points  | Flag
 |----|---------------------|-----------------------|---------|----------------------------
 | 1  | file-run1 | Reverse Engineering | 100 | picoCTF{U51N6_Y0Ur_F1r57_F113_ac61264e} 
-| 2  | file-run2 | Reverse Engineering | 100 | 
+| 2  | file-run2 | Reverse Engineering | 100 | picoCTF{F1r57_4rgum3n7_c2db2786}
 | 3  | GDB Test Drive | Reverse Engineering | 100 | 
 | 4  | patchme.py | Reverse Engineering | 100 | 
 | 5  | Safe Opener | Reverse Engineering | 100 | 
@@ -61,8 +61,25 @@ Try running it by adding a '.' in front of the path to the file (i.e. **$ ./run*
 **Flag**  
 `picoCTF{U51N6_Y0Ur_F1r57_F113_ac61264e}`
 
+
 ## file-run2
-Tes
+
+**Description**  
+Another program, but this time, it seems to want some input. What happens if you try to run it on the command line with input "Hello!"?
+Download the program [here]()
+
+**Hints 1**  
+Try running it and add the phrase "Hello!" with a space in front (i.e. **"./run Hello!"**)
+
+**Solution [INA]**  
+1. Download `run (1)` file
+2. Buka terminal, dan pergi ke __directory file__
+3. Ketik `chmod +x 'run(1)'` untuk membuat file __executable__
+4. Ketik `./'run(1)' Hello!`
+5. FLAG DIPEROLEH
+
+**Flag**  
+`picoCTF{F1r57_4rgum3n7_c2db2786}`
 
 ## GDB Test Drive
 tES
