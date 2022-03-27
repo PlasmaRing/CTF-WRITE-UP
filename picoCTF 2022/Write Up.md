@@ -56,6 +56,8 @@ Try running it by adding a '.' in front of the path to the file (i.e. **$ ./run*
 4. Ketik `./run`
 5. FLAG DIPEROLEH
 
+![CTFPICO](https://user-images.githubusercontent.com/92077284/160277012-1141bead-106c-4303-86d0-53f19d6b52d6.png)
+
 **Flag**  
 `picoCTF{U51N6_Y0Ur_F1r57_F113_ac61264e}`
 
