@@ -85,21 +85,37 @@ Try running it and add the phrase "Hello!" with a space in front (i.e. **"./run 
 
 
 ## GDB Test Drive
+
+**Description**  
 Can you get the flag?  
-Download this [binary]()  
+Download this [binary](https://github.com/PlasmaRing/CTF-WRITE-UP/blob/6e04ec175decea84a6c1b989b32d864e72426eb7/picoCTF%202022/FILE/gdbme)  
 Here's the test drive instructions:
-`
+```html
 $ chmod +x gdbme
 $ gdb gdbme
 (gdb) layout asm
 (gdb) break *(main+99)
 (gdb) run
 (gdb) jump *(main+104)
-`
+```
+
+**Solution [INA]**  
+1. Download `gdbme` file
+2. Buka terminal, dan pergi ke __directory file__
+3. Ketik `chmod +x gdbme` untuk membuat file __executable__
+4. Ketik `gdb gdbme`
+5. Ketik `(gdb) layout asm` untuk membuka layout gdb
+6. Ketik `break *(main+99)`
+7. Ketik `run`
+8. Ketik `jump *(main+104)`
+9. FLAG DIPEROLEH
+
 ![PICO1](https://user-images.githubusercontent.com/92077284/160289926-ef45b165-a8c7-42e3-ab22-de1b5f43cfa9.png)
 ![PICO2](https://user-images.githubusercontent.com/92077284/160289928-a0e842a3-3efe-4920-a17f-0e86ac179bd6.png)
 ![PICO3](https://user-images.githubusercontent.com/92077284/160289929-acb8110e-5bf9-41e1-aca2-67e534b3f231.png)
 
+**Flag**  
+`picoCTF{d3bugg3r_dr1v3_7e8f2155}`
 
 
 ## patchme.py
