@@ -89,13 +89,18 @@ Can you get the flag?
 Download this [binary]()  
 Here's the test drive instructions:
 `
-$ chmod +x gdbme  
-$ gdb gdbme  
-(gdb) layout asm  
-(gdb) break *(main+99)  
-(gdb) run   
+$ chmod +x gdbme
+$ gdb gdbme
+(gdb) layout asm
+(gdb) break *(main+99)
+(gdb) run
 (gdb) jump *(main+104)
 `
+![PICO1](https://user-images.githubusercontent.com/92077284/160289926-ef45b165-a8c7-42e3-ab22-de1b5f43cfa9.png)
+![PICO2](https://user-images.githubusercontent.com/92077284/160289928-a0e842a3-3efe-4920-a17f-0e86ac179bd6.png)
+![PICO3](https://user-images.githubusercontent.com/92077284/160289929-acb8110e-5bf9-41e1-aca2-67e534b3f231.png)
+
+
 
 ## patchme.py
 Tes
