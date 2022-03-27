@@ -49,6 +49,13 @@ To run the program at all, you must make it executable (i.e. **$ chmod +x run**)
 **Hints 2**  
 Try running it by adding a '.' in front of the path to the file (i.e. **$ ./run**)
 
+**Solution**  
+1. Download the file
+2. 
+
+**Flag**  
+``
+
 ## file-run2
 Tes
 
