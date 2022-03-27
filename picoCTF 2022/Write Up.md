@@ -9,7 +9,7 @@ MAR 15 - MAR 30 | 2022
 | 2  | file-run2 | Reverse Engineering | 100 | picoCTF{F1r57_4rgum3n7_c2db2786}
 | 3  | GDB Test Drive | Reverse Engineering | 100 | picoCTF{d3bugg3r_dr1v3_7e8f2155}
 | 4  | patchme.py | Reverse Engineering | 100 | picoCTF{p47ch1ng_l1f3_h4ck_e40c120e}
-| 5  | Safe Opener | Reverse Engineering | 100 | 
+| 5  | Safe Opener | Reverse Engineering | 100 | picoCTF{pl3as3_l3t_m3_1nt0_th3_saf3}
 | 6  | unpackme.py | Reverse Engineering | 100 | 
 | 7  | bloat.py | Reverse Engineering | 200 | 
 | 8  | Fresh Java | Reverse Engineering | 200 | 
@@ -143,14 +143,21 @@ Run this [Python program](https://github.com/PlasmaRing/CTF-WRITE-UP/blob/a1e50c
 
 **Description**  
 Can you open this safe?  
-I forgot the key to my safe but this [program]() is supposed to help me with retrieving the lost key. Can you help me unlock my safe?  
+I forgot the key to my safe but this [program](https://github.com/PlasmaRing/CTF-WRITE-UP/blob/0b9517138b003f511e19f7cbe836cf452a9b7eb7/picoCTF%202022/FILE/SafeOpener.java) is supposed to help me with retrieving the lost key. Can you help me unlock my safe?  
 Put the password you recover into the picoCTF flag format like:  
 __picoCTF{password}__
 
 **Solution [INA]**  
+1. Download file `SafeOpener.java`
+2. Buka file dan analisa, didapati kode yang terenkripsi oleh __Base64__ adalah `cGwzYXMzX2wzdF9tM18xbnQwX3RoM19zYWYz`
+3. Decode string menggunakan __Base64 online decoder__ seperti https://www.base64decode.org/
+4. Didapati hasil: `pl3as3_l3t_m3_1nt0_th3_saf3`, ubah sesuai format flag
+5. FLAG DIPEROLEH
+
+![PICO1](https://user-images.githubusercontent.com/92077284/160291573-2a9fe800-783c-42f8-ae62-ee78d6cbdf68.png)
 
 **Flag**  
-``
+`picoCTF{pl3as3_l3t_m3_1nt0_th3_saf3}`
 
 
 ## unpackme.py
