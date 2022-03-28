@@ -17,8 +17,8 @@ MAR 15 - MAR 30 | 2022
 | 10 | unpackme | Reverse Engineering | 300 | picoCTF{up><_m3_f7w_a6870b23}
 | 11 | basic-mod1 | Cryptography | 100 | 
 | 12 | basic-mod2 | Cryptography | 100 | 
-| 13 | credstuff | Cryptography | 100 | 
-| 14 | morse-code | Cryptography | 100 | 
+| 13 | credstuff | Cryptography | 100 | picoCTF{C7r1F_54V35_71M3}
+| 14 | morse-code | Cryptography | 100 | picoCTF{wh47_h47h_90d_w20u9h7}
 | 15 | rail-fence | Cryptography | 100 | 
 | 16 | substitution0 | Cryptography | 100 | 
 | 17 | substitution1 | Cryptography | 100 | 
@@ -348,7 +348,7 @@ It's recommended to use a tool to find the modular inverses
 
 **Description**  
 We found a leak of a blackmarket website's login credentials. Can you find the password of the user **cultiris** and successfully decrypt it?  
-Download the leak [here](https://github.com/PlasmaRing/CTF-WRITE-UP/blob/7a4936ddf23a7f4b457db0f39cc1144166b85984/picoCTF%202022/FILE/leak.tar)
+Download the leak [here](https://github.com/PlasmaRing/CTF-WRITE-UP/blob/7a4936ddf23a7f4b457db0f39cc1144166b85984/picoCTF%202022/FILE/leak.tar)  
 The first user in **usernames.txt** corresponds to the first password in **passwords.txt**. The second user corresponds to the second password, and so on.  
 
 **Hints 1**  
@@ -356,22 +356,42 @@ Maybe other passwords will have hints about the leak?
 
 **Solution [INA]**  
 1. Download file, dan buka kedua file
-2. Ditemukan `cultiris` berada di line ke 
+2. Ditemukan `cultiris` berada di line ke **378**
+3. Ditemukan password di line **378** pada file `passwords.txt` adalah `cvpbPGS{P7e1S_54I35_71Z3}`
+4. Menurut hint, terdapat hint pada file `passwords.txt`
+5. Ditemukan hint berupa `pICo7rYpiCoU51N6PicOr0t13` setelah mencari kata kunci `pico`
+6. Decode `cvpbPGS{P7e1S_54I35_71Z3}` menggunakan **Online ROT13 Decoder** seperti https://rot13.com/
+7. FLAG DIPEROLEH
+
+![PICO1](https://user-images.githubusercontent.com/92077284/160408903-b56a467a-856b-4a4a-b3f8-d92e2cbf3ac1.png)
+![PICO2](https://user-images.githubusercontent.com/92077284/160408914-a18d4c82-5f0a-4a0d-98b5-efdb573cc7d8.png)
 
 **Flag**  
-
+`picoCTF{C7r1F_54V35_71M3}`
 
 ## morse-code
 
-
 **Description**  
+Morse code is well known. Can you decrypt this?  
+Download the file [here](https://github.com/PlasmaRing/CTF-WRITE-UP/blob/fc90db01513230b9ca77ef6e7c4bbbafccdcaff3/picoCTF%202022/FILE/morse_chal.wav)  
+Wrap your answer with picoCTF{}, put underscores in place of pauses, and use all lowercase.
 
+**Hints 1**
+Audacity is a really good program to analyze morse code audio.
 
 **Solution [INA]**  
+1. Download file
+2. Buka file menggunakan **Audacity**
+3. Morse dapat terbaca jelas dan dapat diterjemahkan menggunakan **Online Morse Code Translator** seperti https://morsecode.world/international/translator.html
+4. Didapati hasil: `WH47 H47H 90D W20U9H7`
+5. Ubah menjadi format flag: `picoCTF{wh47_h47h_90d_w20u9h7}`
+6. FLAG DIPEROLEH
 
+![image](https://user-images.githubusercontent.com/92077284/160412423-3e1a4917-2a1e-454a-b6f2-d80e27c48389.png)
+![image](https://user-images.githubusercontent.com/92077284/160412498-ff8fbf11-0ab0-4432-ac63-b6a46afdac6b.png)
 
 **Flag**  
-
+`picoCTF{wh47_h47h_90d_w20u9h7}`
 
 ## rail-fence
 
