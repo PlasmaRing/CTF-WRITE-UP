@@ -24,8 +24,8 @@ MAR 15 - MAR 30 | 2022
 | 17 | substitution1 | Cryptography | 100 | picoCTF{FR3QU3NCY_4774CK5_4R3_C001_3645BEC6}
 | 18 | substitution2 | Cryptography | 100 | picoCTF{N6R4M_4N41Y515_15_73D10U5_C823D467}
 | 19 | transposition-trial | Cryptography | 100 | picoCTF{7R4N5P051N6_15_3XP3N51V3_58410214}
-| 20 | Vigenere | Cryptography | 100 | 
-| 21 | diffie-hellman | Cryptography | 200 | 
+| 20 | Vigenere | Cryptography | 100 | picoCTF{D0NT_US3_V1G3N3R3_C1PH3R_0df54reb}
+| 21 | diffie-hellman | Cryptography | 200 | picoCTF{C4354R_C1PH3R_15_4_817_0U7D473D_7609EC61}
 | 22 | Enhance! | Forensics | 100 | 
 | 23 | Lookey here | Forensics | 100 | 
 | 24 | Packets Primer | Forensics | 100 | 
@@ -535,25 +535,52 @@ The flag is picoCTF{7R4N5P051N6_15_3XP3N51V3_58410214}
 
 ## Vigenere
 
-
 **Description**  
+Can you decrypt this message?  
+Decrypt this message using this key "CYLAB".  
+message: `rgnoDVD{O0NU_WQ3_G1G3O3T3_A1AH3S_0fd54cec}`
 
+**Hints 1**  
+https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher
 
 **Solution [INA]**  
+1. Download file yang berisi text: `rgnoDVD{O0NU_WQ3_G1G3O3T3_A1AH3S_0fd54cec}`
+2. Decode menggunakan **Online Vignere Cipher Decoder** seperti: https://www.dcode.fr/vigenere-cipher
+3. Masukan Key: `CYLAB` lalu **DECRYPT**
+4. FLAG DIPEROLEH
 
+![image](https://user-images.githubusercontent.com/92077284/160421654-a3acd498-4dea-4c21-a8a9-e03447ee4e07.png)
 
 **Flag**  
-
+`picoCTF{D0NT_US3_V1G3N3R3_C1PH3R_0df54reb}`
 
 ## diffie-hellman
 
-
 **Description**  
+Alice and Bob wanted to exchange information secretly. The two of them agreed to use the Diffie-Hellman key exchange algorithm, using p = 13 and g = 5. They both chose numbers secretly where Alice chose 7 and Bob chose 3. Then, Alice sent Bob some encoded text (with both letters and digits) using the generated key as the shift amount for a Caesar cipher over the alphabet and the decimal digits. Can you figure out the contents of the message?  
+Download the message here.  
+message: `H98A9W_H6UM8W_6A_9_D6C_5ZCI9C8I_CB5EJHB6`  
+Wrap your decrypted message in the picoCTF flag format like: **picoCTF{decrypted_message}**  
 
+**Hints 1**  
+Diffie-Hellman key exchange is a well known algorithm for generating keys, try looking up how the secret key is generated
+
+**Hints 2**  
+For your Caesar shift amount, try forwards and backwards.
 
 **Solution [INA]**  
-
+1. Download file yang berisi text: `H98A9W_H6UM8W_6A_9_D6C_5ZCI9C8I_CB5EJHB6`
+2. **Generate key** dengan menggunakan **Online Diffie Hellman Key Exchange Calculator** seperti: https://www.irongeek.com/diffie-hellman.php?
+3. Masukan p = 13, g = 5, Alice = 7, dan Bob = 3, lalu **submit**
+4. Didapati key = **5**
+![image](https://user-images.githubusercontent.com/92077284/160423189-b8cfb90b-3689-4682-ada4-35dcc62e53f2.png)
+5. Gunakan **Online Caesar Cipher Decoder** seperti: https://www.boxentriq.com/code-breaking/caesar-cipher
+![image](https://user-images.githubusercontent.com/92077284/160423955-a752bd1c-fe50-4c60-bde6-fba03fbbb9e3.png)
+6. Didapati hasil: `C98V9R_C6PH8R_6V_9_Y6X_5UXD9X8D_XW5ZECW6`
+7. Sempurnakan hasil, karena terdapat angka yang tidak ikut berubah dan beberapa char yang seharusnya berubah menjadi angka
+8. Hasil berubah menjadi: `C4354R_C1PH3R_15_4_817_0U7D473D_7609EC61`
+9. FLAG DIPEROLEH
 
 **Flag**  
-
+`picoCTF{C4354R_C1PH3R_15_4_817_0U7D473D_7609EC61}`
 
