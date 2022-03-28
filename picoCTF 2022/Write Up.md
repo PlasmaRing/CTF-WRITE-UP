@@ -287,4 +287,140 @@ What is UPX?
 
 
 # Cryptography
-## file-run1
+## basic-mod1
+
+**Description**  
+
+
+**Hints 1**  
+
+
+**Hints 2**  
+
+
+**Solution [INA]**  
+
+
+**Flag**  
+
+
+## basic-mod2
+
+
+**Description**  
+
+
+**Solution [INA]**  
+
+
+**Flag**  
+
+
+## credstuff
+
+
+**Description**  
+
+
+**Solution [INA]**  
+
+
+**Flag**  
+
+
+## morse-code
+
+
+**Description**  
+
+
+**Solution [INA]**  
+
+
+**Flag**  
+
+
+## rail-fence
+
+
+**Description**  
+
+
+**Solution [INA]**  
+
+
+**Flag**  
+
+
+## substitution0
+
+
+**Description**  
+
+
+**Solution [INA]**  
+
+
+**Flag**  
+
+
+## substitution1
+
+
+**Description**  
+
+
+**Solution [INA]**  
+
+
+**Flag**  
+
+
+## substitution2
+
+
+**Description**  
+
+
+**Solution [INA]**  
+
+
+**Flag**  
+
+
+## transposition-trial
+
+
+**Description**  
+
+
+**Solution [INA]**  
+
+
+**Flag**  
+
+
+## Vigenere
+
+
+**Description**  
+
+
+**Solution [INA]**  
+
+
+**Flag**  
+
+
+## diffie-hellman
+
+
+**Description**  
+
+
+**Solution [INA]**  
+
+
+**Flag**  
+
+
