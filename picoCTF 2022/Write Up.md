@@ -184,6 +184,8 @@ Reverse engineer this [Python program](https://github.com/PlasmaRing/CTF-WRITE-U
 ## bloat.py
 
 **Description**  
+Can you get the flag?  
+Run this [Python program]() in the same directory as this [encrypted flag]()
 
 **Solution [INA]**  
 
@@ -194,6 +196,11 @@ Reverse engineer this [Python program](https://github.com/PlasmaRing/CTF-WRITE-U
 ## Fresh Java
 
 **Description**  
+Can you get the flag?  
+Reverse engineer this [Java program]()
+
+**Hints 1**  
+Use a decompiler for Java!
 
 **Solution [INA]**  
 
@@ -204,6 +211,8 @@ Reverse engineer this [Python program](https://github.com/PlasmaRing/CTF-WRITE-U
 ## Bbbbloat
 
 **Description**  
+Can you get the flag?  
+Reverse engineer this [binary]()
 
 **Solution [INA]**  
 
@@ -214,6 +223,11 @@ Reverse engineer this [Python program](https://github.com/PlasmaRing/CTF-WRITE-U
 ## unpackme
 
 **Description**  
+Can you get the flag?
+Reverse engineer this [binary]()
+
+**Hints 1**  
+What is UPX?
 
 **Solution [INA]**  
 
