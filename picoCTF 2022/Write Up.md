@@ -19,11 +19,11 @@ MAR 15 - MAR 30 | 2022
 | 12 | basic-mod2 | Cryptography | 100 | 
 | 13 | credstuff | Cryptography | 100 | picoCTF{C7r1F_54V35_71M3}
 | 14 | morse-code | Cryptography | 100 | picoCTF{wh47_h47h_90d_w20u9h7}
-| 15 | rail-fence | Cryptography | 100 | 
-| 16 | substitution0 | Cryptography | 100 | 
-| 17 | substitution1 | Cryptography | 100 | 
-| 18 | substitution2 | Cryptography | 100 |
-| 19 | transposition-trial | Cryptography | 100 | 
+| 15 | rail-fence | Cryptography | 100 | picoCTF{WH3R3_D035_7H3_F3NC3_8361N_4ND_3ND_318F0948}
+| 16 | substitution0 | Cryptography | 100 | picoCTF{5UB5717U710N_3V0LU710N_F96A338E}
+| 17 | substitution1 | Cryptography | 100 | picoCTF{FR3QU3NCY_4774CK5_4R3_C001_3645BEC6}
+| 18 | substitution2 | Cryptography | 100 | picoCTF{N6R4M_4N41Y515_15_73D10U5_C823D467}
+| 19 | transposition-trial | Cryptography | 100 | picoCTF{7R4N5P051N6_15_3XP3N51V3_58410214}
 | 20 | Vigenere | Cryptography | 100 | 
 | 21 | diffie-hellman | Cryptography | 200 | 
 | 22 | Enhance! | Forensics | 100 | 
@@ -395,63 +395,143 @@ Audacity is a really good program to analyze morse code audio.
 
 ## rail-fence
 
-
 **Description**  
+A type of transposition cipher is the rail fence cipher, which is described [here](https://en.wikipedia.org/wiki/Rail_fence_cipher). Here is one such cipher encrypted using the rail fence with 4 rails. Can you decrypt it?  
+Download the message here.  
+message: `Ta _7N6D34hlg:W3D_H3C31N__198ef sHR053F38N43D80 i33___NF`  
+Put the decoded message in the picoCTF flag format, picoCTF{decoded_message}. 
 
+**Hints 1**  
+Once you've understood how the cipher works, it's best to draw it out yourself on paper
 
 **Solution [INA]**  
-
+1. Download file berisi `Ta _7N6D34hlg:W3D_H3C31N__198ef sHR053F38N43D80 i33___NF`
+2. Decode menggunakan **Online Rail Fence Cipher Decoder** seperti: https://www.boxentriq.com/code-breaking/rail-fence-cipher
+3. Set rail ke 4, Ofset ke 0
+4. FLAG DIPEROLEH
 
 **Flag**  
-
+`picoCTF{WH3R3_D035_7H3_F3NC3_8361N_4ND_3ND_318F0948}`
 
 ## substitution0
 
-
 **Description**  
+A message has come in but it seems to be all scrambled. Luckily it seems to have the key at the beginning. Can you crack this substitution cipher?  
+Download the message here.  
+message: 
+```html 
+PJFRENTZHOMQKLAIUVSWCYDXGB 
 
+Zevecial Qetvplr pvase, dhwz p tvpye plr swpweqg phv, plr jvactzw ke wze jeewqe
+nvak p tqpss fpse hl dzhfz hw dps elfqaser. Hw dps p jepcwhncq sfpvpjpecs, plr, pw
+wzpw whke, clmladl wa lpwcvpqhsws—an facvse p tvepw ivhbe hl p sfhelwhnhf iahlw
+an yhed. Wzeve deve wda vaclr jqpfm siaws lepv ale exwvekhwg an wze jpfm, plr p
+qalt ale lepv wze awzev. Wze sfpqes deve exfeerhltqg zpvr plr tqassg, dhwz pqq wze
+piiepvplfe an jcvlhszer taqr. Wze dehtzw an wze hlsefw dps yevg vekpvmpjqe, plr,
+wpmhlt pqq wzhlts hlwa falshrevpwhal, H facqr zpvrqg jqpke Ocihwev nav zhs aihlhal
+vesiefwhlt hw.
+
+Wze nqpt hs: ihfaFWN{5CJ5717C710L_3Y0QC710L_N96P338E}
+```
+
+**Hints 1**  
+Try a frequency attack. An online tool might help.
 
 **Solution [INA]**  
+1. Download file
+2. Decode text menggunakan **Online Subtitution Decoder** seperti: https://www.dcode.fr/monoalphabetic-substitution
+3. Setting bahasa menjadi **English** dan **DECRYPT AUTOMATICALLY**
+4. Didapati flag: `PICOCTF{5UB5717U710N_3V0LU710N_F96A338E}`
+5. Ubah format menjadi: `picoCTF{5UB5717U710N_3V0LU710N_F96A338E}`
+6. FLAG DIPEROLEH
 
+![image](https://user-images.githubusercontent.com/92077284/160416406-64464beb-967e-458e-876f-a46830f255f6.png)
 
 **Flag**  
-
+`picoCTF{5UB5717U710N_3V0LU710N_F96A338E}`
 
 ## substitution1
 
-
 **Description**  
+A second message has come in the mail, and it seems almost identical to the first one. Maybe the same thing will work again.  
+Download the message here.
+message: 
+```html 
+DAFq (qgjwa fjw dkxahwz agz frke) kwz k aoxz jf djbxhazw qzdhwtao djbxzatatjn. Djnazqaknaq kwz xwzqznazs mtag k qza jf dgkrrznezq mgtdg azqa agztw dwzkatltao, azdgntdkr (kns ejjertne) qutrrq, kns xwjyrzb-qjrltne kytrtao. Dgkrrznezq hqhkrro djlzw k nhbyzw jf dkazejwtzq, kns mgzn qjrlzs, zkdg otzrsq k qawtne (dkrrzs k frke) mgtdg tq qhybtaazs aj kn jnrtnz qdjwtne qzwltdz. DAFq kwz k ewzka mko aj rzkwn k mtsz kwwko jf djbxhazw qzdhwtao qutrrq tn k qkfz, rzekr znltwjnbzna, kns kwz gjqazs kns xrkozs yo bkno qzdhwtao ewjhxq kwjhns agz mjwrs fjw fhn kns xwkdatdz. Fjw agtq xwjyrzb, agz frke tq: xtdjDAF{FW3VH3NDO_4774DU5_4W3_D001_3645YZD6}
+```
 
+**Hints 1**  
+Try a frequency attack
+
+**Hints 2**  
+Do the punctuation and the individual words help you make any substitutions?
 
 **Solution [INA]**  
+1. Download file
+2. Decode text menggunakan **Online Subtitution Decoder** seperti: https://www.dcode.fr/monoalphabetic-substitution
+3. Setting bahasa menjadi **English** dan **DECRYPT AUTOMATICALLY**
+4. Didapati flag: `PICOCTF{FR3JU3NCY_4774CK5_4R3_C001_3645BEC6}`
+5. Sedikit ubah agar kata dan flag lebih sesuai `picoCTF{FR3QU3NCY_4774CK5_4R3_C001_3645BEC6}`
+6. FLAG DIPEROLEH
 
+![image](https://user-images.githubusercontent.com/92077284/160417625-c3ed4edb-620a-4885-891a-f10b5988942f.png)
 
 **Flag**  
-
+`picoCTF{FR3QU3NCY_4774CK5_4R3_C001_3645BEC6}`
 
 ## substitution2
 
-
 **Description**  
+It seems that another encrypted message has been intercepted. The encryptor seems to have learned their lesson though and now there isn't any punctuation! Can you still crack the cipher?  
+Download the message here.
+message:
+```html
+xkjvjjapmxmjcjvnifxkjvdjiijmxneipmkjokphkmykffiyfsulxjvmjylvpxzyfsujxpxpfrmpryiloprhyzejvunxvpfxnrolmyzejvykniijrhjxkjmjyfsujxpxpfrmqfylmuvpsnvpizfrmzmxjsmnosprpmxvnxpfrqlronsjrxnimdkpyknvjcjvzlmjqlinrosnvtjxneijmtpiimkfdjcjvdjejipjcjxkjuvfujvulvufmjfqnkphkmykffiyfsulxjvmjylvpxzyfsujxpxpfrpmrfxfrizxfxjnykcnilneijmtpiimelxnimfxfhjxmxlojrxmprxjvjmxjoprnrojaypxjoneflxyfsulxjvmypjryjojqjrmpcjyfsujxpxpfrmnvjfqxjrinefvpflmnqqnpvmnroyfsjofdrxfvlrrprhykjytipmxmnrojajylxprhyfrqphmyvpuxmfqqjrmjfrxkjfxkjvknropmkjncpizqfylmjofrjauifvnxpfrnropsuvfcpmnxpfrnrofqxjrknmjijsjrxmfquinzdjejipjcjnyfsujxpxpfrxflykprhfrxkjfqqjrmpcjjijsjrxmfqyfsulxjvmjylvpxzpmxkjvjqfvjnejxxjvcjkpyijqfvxjykjcnrhjipmsxfmxlojrxmprnsjvpynrkphkmykffimqlvxkjvdjejipjcjxknxnrlrojvmxnroprhfqfqqjrmpcjxjykrpgljmpmjmmjrxpniqfvsflrxprhnrjqqjyxpcjojqjrmjnroxknxxkjxffimnroyfrqphlvnxpfrqfylmjryflrxjvjoprojqjrmpcjyfsujxpxpfrmofjmrfxijnomxlojrxmxftrfdxkjpvjrjsznmjqqjyxpcjiznmxjnykprhxkjsxfnyxpcjizxkprtiptjnrnxxnytjvupyfyxqpmnrfqqjrmpcjizfvpjrxjokphkmykffiyfsulxjvmjylvpxzyfsujxpxpfrxknxmjjtmxfhjrjvnxjprxjvjmxpryfsulxjvmypjryjnsfrhkphkmykffijvmxjnykprhxkjsjrflhkneflxyfsulxjvmjylvpxzxfupgljxkjpvylvpfmpxzsfxpcnxprhxkjsxfjauifvjfrxkjpvfdrnrojrneiprhxkjsxfejxxjvojqjroxkjpvsnykprjmxkjqinhpmupyfYXQ{R6V4S_4R41Z515_15_73O10L5_Y823O467}
+```
 
+**Hints 1**  
+Try refining your frequency attack, maybe analyzing groups of letters would improve your results?
 
 **Solution [INA]**  
+1. Download file
+2. Decode text menggunakan **Online Subtitution Decoder** seperti: https://www.dcode.fr/monoalphabetic-substitution
+3. Setting bahasa menjadi **English** dan **DECRYPT AUTOMATICALLY**
+4. Didapati flag: `PICOCTF{N6R4M_4N41Y515_15_73D10U5_C823D467}`
+5. Ubah format menjadi: `picoCTF{N6R4M_4N41Y515_15_73D10U5_C823D467}`
+6. FLAG DIPEROLEH
 
+![image](https://user-images.githubusercontent.com/92077284/160418094-c97198d3-bb6e-4bae-8599-0224b523aab0.png)
 
 **Flag**  
-
+`picoCTF{N6R4M_4N41Y515_15_73D10U5_C823D467}`
 
 ## transposition-trial
 
-
 **Description**  
+Our data got corrupted on the way here. Luckily, nothing got replaced, but every block of 3 got scrambled around! The first word seems to be three letters long, maybe you can use that to recover the rest of the message.  
+Download the corrupted message here.  
+message: `heTfl g as iicpCTo{7F4NRP051N5_16_35P3X51N3_V8450214}1`
 
+**Hints 1**  
+Split the message up into blocks of 3 and see how the first block is scrambled
 
 **Solution [INA]**  
-
+1. Download file yang berisi text: `heTfl g as iicpCTo{7F4NRP051N5_16_35P3X51N3_V8450214}1`
+2. Pisahkan text dengan char, tiap char ke3
+```html
+ heTfl g as iicpCTo{7F4NRP051N5_16_35P3X51N3_V8450214}1
+   T     a  i  p  o  F  R  5  5  6  5  X  N  V  5  1  1
+```
+3. Pindahkan char ke3 ke char sebelumnya(kiri)
+```html
+ heTfl g as iicpCTo{7F4NRP051N5_16_35P3X51N3_V8450214}1
+   T     a  i  p  o  F  R  5  5  6  5  X  N  V  5  1  1
+The flag is picoCTF{7R4N5P051N6_15_3XP3N51V3_58410214} 
+```
+4. FLAG DIPEROLEH
 
 **Flag**  
-
+`picoCTF{7R4N5P051N6_15_3XP3N51V3_58410214}`
 
 ## Vigenere
 
