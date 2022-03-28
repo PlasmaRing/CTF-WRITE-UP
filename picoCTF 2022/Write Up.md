@@ -14,7 +14,7 @@ MAR 15 - MAR 30 | 2022
 | 7  | bloat.py | Reverse Engineering | 200 | picoCTF{d30bfu5c4710n_f7w_e9e38c27}
 | 8  | Fresh Java | Reverse Engineering | 200 | picoCTF{700l1ng_r3qu1r3d_0c3de6a4}
 | 9  | Bbbbloat | Reverse Engineering | 300 | picoCTF{cu7_7h3_bl047_cbc074c0}
-| 10 | unpackme | Reverse Engineering | 300 | 
+| 10 | unpackme | Reverse Engineering | 300 | picoCTF{up><_m3_f7w_a6870b23}
 | 11 | basic-mod1 | Cryptography | 100 | 
 | 12 | basic-mod2 | Cryptography | 100 | 
 | 13 | credstuff | Cryptography | 100 | 
@@ -260,11 +260,30 @@ What is UPX?
 
 **Solution [INA]**  
 1. Download file
-2. Cek apakah file dalam status __packed__
-3. __unpack__ file
+2. Cek apakah file `unpackme-upx` dalam status __packed__ menggunakan tool seperti __Detect It Easy__
+3. Buka terminal, dan pergi ke __directory file__
+4. __unpack__ file dengan mengetikan `upx -d unpackme-upx -o unpackme-unpack `
+5. Cek apakah file `unpackme-unpack` berhasil di __unpack__
+6. Buka file `unpackme-unpack` menggunakan IDA
+7. Pergi ke `main`
+8. KLik F5 untuk __decompile__
+9. __Secret Number__ ditemukan: `754635`
+10. Buka terminal, dan pergi ke __directory file__
+11. Ketik `chmod +x unpackme-upx` untuk membuat file __executable__
+12. Ketik `./unpackme-upx` untuk menjalankan file
+13. Masukan __Secret Number__ `754635`
+14. FLAG DIPEROLEH
+
+![PICO1](https://user-images.githubusercontent.com/92077284/160375948-f0677ea3-1887-4e6b-95f6-246b6869d41e.png)
+![PICO2](https://user-images.githubusercontent.com/92077284/160375953-871b3f62-084d-4de3-b1a8-007385d58d45.png)
+![PICO3](https://user-images.githubusercontent.com/92077284/160375960-44273c7a-247b-4687-ad8d-e8013ff2416a.png)
+![PICO4](https://user-images.githubusercontent.com/92077284/160375969-25b2803f-8d62-4578-bc51-20c555b5ec6f.png)
+![PICO5](https://user-images.githubusercontent.com/92077284/160375976-1fd629cb-b192-4dfe-b947-5a3bec824791.png)
+![PICO6](https://user-images.githubusercontent.com/92077284/160375980-8cd62bcc-5ea5-48f6-bb04-e576ed47930d.png)
+
 
 **Flag**  
-``
+`picoCTF{up><_m3_f7w_a6870b23}`
 
 
 # Cryptography
