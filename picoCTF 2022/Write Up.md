@@ -30,10 +30,10 @@ MAR 15 - MAR 30 | 2022
 | 23 | Lookey here | Forensics | 100 | picoCTF{gr3p_15_@w3s0m3_c91a291d}
 | 24 | Packets Primer | Forensics | 100 | picoCTF{p4ck37_5h4rk_2edd7e58}
 | 25 | Redaction gone wrong | Forensics | 100 | picoCTF{C4n_Y0u_S33_m3_fully}
-| 26 | Includes | Web Exploitation | 100 | 
-| 27 | Inspect HTML | Web Exploitation | 100 | 
-| 28 | Local Authority | Web Exploitation | 100 | 
-| 29 | Power Cookie | Web Exploitation | 200 |
+| 26 | Includes | Web Exploitation | 100 | picoCTF{1nclu51v17y_1of2_f7w_2of2_3d50f001}
+| 27 | Inspect HTML | Web Exploitation | 100 | picoCTF{1n5p3t0r_0f_h7ml_ab1df88d}
+| 28 | Local Authority | Web Exploitation | 100 | picoCTF{j5_15_7r4n5p4r3n7_d6a44d91}
+| 29 | Power Cookie | Web Exploitation | 200 | picoCTF{gr4d3_A_c00k13_1d871e17}
 
 
 # Reverse Engineering 
@@ -669,18 +669,93 @@ How can you be sure of the redaction?
 
 
 # Web Exploitation
-## 
+## Includes
 
 **Description**  
-
+Can you get the flag?  
+Go to this website and see what you can discover.
+WEBSITE: http://saturn.picoctf.net:52811/
 
 **Hints 1**  
-
-
-**Hints 2**  
-
+Is there more code than what the inspector initially shows?
 
 **Solution [INA]**  
-
+1. Buka website, lalu **inspect**
+2. Pergi ke `Sources - style.css`
+3. Ditemukan sepotong flag `picoCTF{1nclu51v17y_1of2_`
+![image](https://user-images.githubusercontent.com/92077284/160437381-52268682-b1a1-4d8e-9b56-bd52e0f1b8b5.png)
+4. Pergi ke `Sources - script.js`
+5. Ditemukan sepotong flag `f7w_2of2_3d50f001}`
+![image](https://user-images.githubusercontent.com/92077284/160437612-de02f494-f717-460c-b85a-4ffedd0fa3cf.png)
+6. Satukan flag, FLAG DIPEROLEH
 
 **Flag**  
+`picoCTF{1nclu51v17y_1of2_f7w_2of2_3d50f001}`
+
+
+## Inspect HTML
+
+**Description**  
+Can you get the flag?
+Go to this website and see what you can discover.
+WEBSITE: http://saturn.picoctf.net:60935/
+
+**Hints 1**  
+What is the web inspector in web browsers?
+
+**Solution [INA]**  
+1. Buka website, lalu **inspect**
+2. Pergi ke `Sources - (index)`
+3. FLAG DIPEROLEH
+![image](https://user-images.githubusercontent.com/92077284/160438251-5b95ae14-b566-4bb6-a509-a46e9865a065.png)
+
+**Flag**  
+`picoCTF{1n5p3t0r_0f_h7ml_ab1df88d}`
+
+
+## Local Authority
+
+**Description**  
+Can you get the flag?
+Go to this website and see what you can discover.
+WEBSITE: http://saturn.picoctf.net:51419/
+
+**Hints 1**  
+How is the password checked on this website?
+
+**Solution [INA]**  
+1. Buka website, lalu **inspect**
+2. Masukan **Username** dan **Password** secara **random** 
+3. Pergi ke `Sources - secure.js`
+4. Diperoleh **Username** dan **Password** yang sesuai
+![image](https://user-images.githubusercontent.com/92077284/160439009-9b4609d4-021e-406a-a075-7e060e9a1012.png)
+5. Kembali ke halaman awal, dan masukan **Username** dan **Password** yang sesuai
+![image](https://user-images.githubusercontent.com/92077284/160439252-19252391-2541-4c83-94c2-ba55c2c394af.png)
+6. FLAG DIPEROLEH
+
+**Flag**  
+`picoCTF{j5_15_7r4n5p4r3n7_d6a44d91}`
+
+
+## Power Cookie
+
+**Description**  
+Can you get the flag?
+Go to this website and see what you can discover.
+WEBSITE: http://saturn.picoctf.net:51419/
+
+**Hints 1**  
+Do you know how to modify cookies?
+
+**Solution [INA]**  
+1. Buka website, lalu **inspect**
+2. Klik `Continue as guest`
+3. Pergi ke `Application - Storage - Cookies`
+4. Ubah Value dari **0** ke **1**
+![image](https://user-images.githubusercontent.com/92077284/160439992-60f2b65a-1e98-4cc6-a72f-a9495b752ddc.png)
+5. Refresh website
+6. FLAG DIPEROLEH
+![image](https://user-images.githubusercontent.com/92077284/160440079-335a5555-9792-4f4f-8ab3-248fa1da3d6e.png)
+
+**Flag**  
+`picoCTF{gr4d3_A_c00k13_1d871e17}`
