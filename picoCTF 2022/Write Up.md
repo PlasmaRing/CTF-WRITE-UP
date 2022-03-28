@@ -26,10 +26,10 @@ MAR 15 - MAR 30 | 2022
 | 19 | transposition-trial | Cryptography | 100 | picoCTF{7R4N5P051N6_15_3XP3N51V3_58410214}
 | 20 | Vigenere | Cryptography | 100 | picoCTF{D0NT_US3_V1G3N3R3_C1PH3R_0df54reb}
 | 21 | diffie-hellman | Cryptography | 200 | picoCTF{C4354R_C1PH3R_15_4_817_0U7D473D_7609EC61}
-| 22 | Enhance! | Forensics | 100 | 
-| 23 | Lookey here | Forensics | 100 | 
-| 24 | Packets Primer | Forensics | 100 | 
-| 25 | Redaction gone wrong | Forensics | 100 | 
+| 22 | Enhance! | Forensics | 100 | picoCTF{3nh4nc3d_6ae42bba}
+| 23 | Lookey here | Forensics | 100 | picoCTF{gr3p_15_@w3s0m3_c91a291d}
+| 24 | Packets Primer | Forensics | 100 | picoCTF{p4ck37_5h4rk_2edd7e58}
+| 25 | Redaction gone wrong | Forensics | 100 | picoCTF{C4n_Y0u_S33_m3_fully}
 | 26 | Includes | Web Exploitation | 100 | 
 | 27 | Inspect HTML | Web Exploitation | 100 | 
 | 28 | Local Authority | Web Exploitation | 100 | 
@@ -574,7 +574,7 @@ For your Caesar shift amount, try forwards and backwards.
 3. Masukan p = 13, g = 5, Alice = 7, dan Bob = 3, lalu **submit**
 4. Didapati key = **5**
 ![image](https://user-images.githubusercontent.com/92077284/160423189-b8cfb90b-3689-4682-ada4-35dcc62e53f2.png)
-5. Gunakan **Online Caesar Cipher Decoder** seperti: https://www.boxentriq.com/code-breaking/caesar-cipher
+5. Gunakan **Online Caesar Cipher Decoder**, lalu masukan **5** sebagai key seperti: https://www.boxentriq.com/code-breaking/caesar-cipher
 ![image](https://user-images.githubusercontent.com/92077284/160423955-a752bd1c-fe50-4c60-bde6-fba03fbbb9e3.png)
 6. Didapati hasil: `C98V9R_C6PH8R_6V_9_Y6X_5UXD9X8D_XW5ZECW6`
 7. Sempurnakan hasil, karena terdapat angka yang tidak ikut berubah dan beberapa char yang seharusnya berubah menjadi angka
@@ -584,3 +584,103 @@ For your Caesar shift amount, try forwards and backwards.
 **Flag**  
 `picoCTF{C4354R_C1PH3R_15_4_817_0U7D473D_7609EC61}`
 
+
+# Forensics
+## Enhance!
+
+**Description**  
+Download this image file and find the flag.  
+[Download image file](https://github.com/PlasmaRing/CTF-WRITE-UP/blob/8ec682f123788218df54eef0e8f29ccbd318d637/picoCTF%202022/FILE/drawing.flag.svg)
+
+**Solution [INA]**  
+1. Download file `drawing.flag.svg`
+2. Buka file menggunakan **VS CODE**
+![image](https://user-images.githubusercontent.com/92077284/160430459-58e1e8ee-8f08-49ae-affe-8fff71f9bb3f.png)
+3. Susun char dan text yang ada diantara `tspan`
+4. Text dapat disusun menjadi: `picoCTF{3nh4nc3d_6ae42bba}`
+5. FLAG DIPEROLEH
+
+**Flag**  
+`picoCTF{3nh4nc3d_6ae42bba}`
+
+
+## Lookey here
+
+**Description**  
+Attackers have hidden information in a very large mass of data in the past, maybe they are still doing it.  
+Download the data [here](https://github.com/PlasmaRing/CTF-WRITE-UP/blob/22a311e69d0848c226484c492e76ad19fb505317/picoCTF%202022/FILE/anthem.flag.txt)
+
+**Hints 1**  
+Download the file and search for the flag based on the known prefix.
+
+**Solution [INA]**  
+1. Download file `anthem.flag.txt`
+2. Buka file menggunakan **VS CODE**
+3. Cari kata kunci **pico**
+4. FLAG DIPEROLEH
+
+![image](https://user-images.githubusercontent.com/92077284/160431787-f7573ef5-5ed9-4e6b-9ada-01b7d3271698.png)
+
+**Flag**  
+`picoCTF{gr3p_15_@w3s0m3_c91a291d}`
+
+
+## Packets Primer
+
+**Description**  
+Download the packet capture file and use packet analysis software to find the flag.  
+Download [packet capture](https://github.com/PlasmaRing/CTF-WRITE-UP/blob/701efc7132eb0c0fb4d77c4af2c966d86d4d35f7/picoCTF%202022/FILE/network-dump.flag.pcap)
+
+**Hints 1**  
+Wireshark, if you can install and use it, is probably the most beginner friendly packet analysis software product.
+
+**Solution [INA]**  
+1. Download file `network-dump.flag.pcap`
+2. Buka file menggunakan **Wireshark**
+3. Cari flag pada **tab Wireshark**
+4. FLAG DIPEROLEH
+
+![PICO1](https://user-images.githubusercontent.com/92077284/160433643-b4246067-1700-48d3-9060-91873b472c58.png)
+
+**Flag**  
+`picoCTF{p4ck37_5h4rk_2edd7e58}`
+
+
+## Redaction gone wrong
+
+**Description**  
+Now you DON’T see me.  
+This [report](https://github.com/PlasmaRing/CTF-WRITE-UP/blob/d0af4457acca51a7514e95ef8e6d97658aff7425/picoCTF%202022/FILE/Financial_Report_for_ABC_Labs.pdf) has some critical data in it, some of which have been redacted correctly, while some were not. Can you find an important key that was not redacted properly?
+
+**Hints 1**  
+How can you be sure of the redaction?
+
+**Solution [INA]**  
+1. Download file `Financial_Report_for_ABC_Labs`
+2. **Blok** semua text pada pdf, lalu **Copy**
+3. **Paste** text ke **notepad**
+4. FLAG DIPEROLEH
+
+![image](https://user-images.githubusercontent.com/92077284/160436104-c7b5656e-1bb1-4f16-885b-d3270461d902.png)
+![image](https://user-images.githubusercontent.com/92077284/160436187-cd0c260d-e304-4eb8-bab2-57a7c981f758.png)
+
+**Flag**  
+`picoCTF{C4n_Y0u_S33_m3_fully}`
+
+
+# Web Exploitation
+## 
+
+**Description**  
+
+
+**Hints 1**  
+
+
+**Hints 2**  
+
+
+**Solution [INA]**  
+
+
+**Flag**  
