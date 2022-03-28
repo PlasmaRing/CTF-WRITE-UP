@@ -12,8 +12,8 @@ MAR 15 - MAR 30 | 2022
 | 5  | Safe Opener | Reverse Engineering | 100 | picoCTF{pl3as3_l3t_m3_1nt0_th3_saf3}
 | 6  | unpackme.py | Reverse Engineering | 100 | picoCTF{175_chr157m45_616d21a3}
 | 7  | bloat.py | Reverse Engineering | 200 | picoCTF{d30bfu5c4710n_f7w_e9e38c27}
-| 8  | Fresh Java | Reverse Engineering | 200 | 
-| 9  | Bbbbloat | Reverse Engineering | 300 | 
+| 8  | Fresh Java | Reverse Engineering | 200 | picoCTF{700l1ng_r3qu1r3d_0c3de6a4}
+| 9  | Bbbbloat | Reverse Engineering | 300 | picoCTF{cu7_7h3_bl047_cbc074c0}
 | 10 | unpackme | Reverse Engineering | 300 | 
 | 11 | basic-mod1 | Cryptography | 100 | 
 | 12 | basic-mod2 | Cryptography | 100 | 
@@ -214,9 +214,13 @@ Reverse engineer this [Java program](https://github.com/PlasmaRing/CTF-WRITE-UP/
 Use a decompiler for Java!
 
 **Solution [INA]**  
+1. Download file
+2. Gunakan online java decompiler http://www.javadecompilers.com/
+3. Masukan file, dan urutkan `nextLine.charAt(0) sampai nextLine.charAt(33)`
+4. FLAG DIPEROLEH
 
 **Flag**  
-``
+`picoCTF{700l1ng_r3qu1r3d_0c3de6a4}`
 
 
 ## Bbbbloat
@@ -226,9 +230,23 @@ Can you get the flag?
 Reverse engineer this [binary](https://github.com/PlasmaRing/CTF-WRITE-UP/blob/9ac796a26646b2403c26b1ad7809177f677f2278/picoCTF%202022/FILE/bbbbloat)
 
 **Solution [INA]**  
+1. Download file
+2. Buka file menggunakan IDA
+3. Pergi ke `main`
+4. KLik F5 untuk __decompile__
+5. __Secret Number__ ditemukan: `549255`
+6. Buka terminal, dan pergi ke __directory file__
+7. Ketik `chmod +x bbbbloat` untuk membuat file __executable__
+8. Ketik `./bbbbloat` untuk menjalankan file
+9. Masukan __Secret Number__ `549255`
+10. FLAG DIPEROLEH
+
+![PICO1](https://user-images.githubusercontent.com/92077284/160372597-5ccef086-d8c2-4fe8-beb4-a28610db0088.png)
+![PICO2](https://user-images.githubusercontent.com/92077284/160372606-01d0447d-1f03-435b-a53c-2a08e21cfc30.png)
+![PICO3](https://user-images.githubusercontent.com/92077284/160372612-df5ff57b-4e51-4b98-834c-0c01b24b7f70.png)
 
 **Flag**  
-``
+`picoCTF{cu7_7h3_bl047_cbc074c0}`
 
 
 ## unpackme
@@ -241,6 +259,9 @@ Reverse engineer this [binary](https://github.com/PlasmaRing/CTF-WRITE-UP/blob/9
 What is UPX?
 
 **Solution [INA]**  
+1. Download file
+2. Cek apakah file dalam status __packed__
+3. __unpack__ file
 
 **Flag**  
 ``
