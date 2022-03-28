@@ -290,40 +290,73 @@ What is UPX?
 ## basic-mod1
 
 **Description**  
-
+We found this weird message being passed around on the servers, we think we have a working decrpytion scheme.  
+Download the message here.  
+message: `387 248 131 272 373 221 161 110 91 359 390 50 225 184 223 137 225 327 42 179 220 365 `  
+Take each number mod 37 and map it to the following character set: 0-25 is the alphabet (uppercase), 26-35 are the decimal digits, and 36 is an underscore.  
+Wrap your decrypted message in the picoCTF flag format (i.e. __picoCTF{decrypted_message}__)
 
 **Hints 1**  
-
+Do you know what mod 37 means?
 
 **Hints 2**  
-
+mod 37 means modulo 37. It gives the remainder of a number after being divided by 37.
 
 **Solution [INA]**  
-
+1. Gunakan __Online Modulo Cipher Decoder__ seperti: https://www.dcode.fr/modulo-cipher
+2. Input **message** dan **37** sebagai modulonya
+3. Didapati hasil: `17 26 20 13 3 36 13 36 17 26 20 13 3 36 1 26 3 31 5 31 35 32`
+4. Ubah **string angka** menjadi **string** sesuai ketentuan pada deskripsi
+5. Didapati hasil: 
+6. FLAG DIPEROLEH
 
 **Flag**  
 
 
 ## basic-mod2
 
-
 **Description**  
+A new modular challenge!  
+Download the message here.  
+message: `145 126 356 272 98 378 395 352 392 215 446 168 180 359 51 190 404 209 185 115 363 431 103 `  
+Take each number mod 41 and find the modular inverse for the result. Then map to the following character set: 1-26 are the alphabet, 27-36 are the decimal digits, and 37 is an underscore.  
+Wrap your decrypted message in the picoCTF flag format (i.e. __picoCTF{decrypted_message}__)
 
+**Hints 1**  
+Do you know what the modular inverse is?
+
+**Hints 2**  
+The inverse modulo z of x is the number, y that when multiplied by x is 1 modulo z
+
+**Hints 3**  
+It's recommended to use a tool to find the modular inverses
 
 **Solution [INA]**  
-
+1. Gunakan __Online Modulo Cipher Decoder__ seperti: https://www.dcode.fr/modulo-cipher
+2. Input **message** dan **41** sebagai modulonya
+3. Didapati hasil: `22 3 28 26 16 9 26 24 23 10 36 4 16 31 10 26 35 4 21 33 35 21 21`
+4. **Invers modulo 41** pada setiap angka
+5. Didapati hasil: 
+6. Ubah **string angka** menjadi **string** sesuai ketentuan pada deskripsi
+7. Didapati hasil: 
+8. FLAG DIPEROLEH
 
 **Flag**  
 
 
 ## credstuff
 
-
 **Description**  
+We found a leak of a blackmarket website's login credentials. Can you find the password of the user **cultiris** and successfully decrypt it?  
+Download the leak [here](https://github.com/PlasmaRing/CTF-WRITE-UP/blob/7a4936ddf23a7f4b457db0f39cc1144166b85984/picoCTF%202022/FILE/leak.tar)
+The first user in **usernames.txt** corresponds to the first password in **passwords.txt**. The second user corresponds to the second password, and so on.  
 
+**Hints 1**  
+Maybe other passwords will have hints about the leak?
 
 **Solution [INA]**  
-
+1. Download file, dan buka kedua file
+2. Ditemukan `cultiris` berada di line ke 
 
 **Flag**  
 
