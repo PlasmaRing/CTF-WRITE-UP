@@ -11,7 +11,7 @@ MAR 15 - MAR 30 | 2022
 | 4  | patchme.py | Reverse Engineering | 100 | picoCTF{p47ch1ng_l1f3_h4ck_e40c120e}
 | 5  | Safe Opener | Reverse Engineering | 100 | picoCTF{pl3as3_l3t_m3_1nt0_th3_saf3}
 | 6  | unpackme.py | Reverse Engineering | 100 | picoCTF{175_chr157m45_616d21a3}
-| 7  | bloat.py | Reverse Engineering | 200 | 
+| 7  | bloat.py | Reverse Engineering | 200 | picoCTF{d30bfu5c4710n_f7w_e9e38c27}
 | 8  | Fresh Java | Reverse Engineering | 200 | 
 | 9  | Bbbbloat | Reverse Engineering | 300 | 
 | 10 | unpackme | Reverse Engineering | 300 | 
@@ -188,9 +188,20 @@ Can you get the flag?
 Run this [Python program](https://github.com/PlasmaRing/CTF-WRITE-UP/blob/9ac796a26646b2403c26b1ad7809177f677f2278/picoCTF%202022/FILE/bloat/bloat.flag.py) in the same directory as this [encrypted flag](https://github.com/PlasmaRing/CTF-WRITE-UP/blob/9ac796a26646b2403c26b1ad7809177f677f2278/picoCTF%202022/FILE/bloat/flag.txt.enc)
 
 **Solution [INA]**  
+1. Download kedua file dan masukan kedua file di folder yang sama
+2. Buka file `bloat.flag.py`
+3. Tambahkan `print(a[71]+a[64]+a[79]+a[79]+a[88]+a[66]+a[71]+a[64]+a[77]+a[66]+a[68])` agar mendapatkan __password__
+4. Buka terminal dan pergi ke __directory file__
+5. Ketik `python3 bloat.flag.py` untuk menjalankan file
+6. Didapati __password__ adalah `happychance`
+7. Input password: `happychance`
+8. FLAG DIPEROLEH
+
+![PICO1](https://user-images.githubusercontent.com/92077284/160359157-2c4fc768-7b61-45c5-bc30-86106b61523b.png)
+![PICO2](https://user-images.githubusercontent.com/92077284/160359163-c9f85184-f802-4aea-8128-59f9f50cd0bf.png)
 
 **Flag**  
-``
+`picoCTF{d30bfu5c4710n_f7w_e9e38c27}`
 
 
 ## Fresh Java
