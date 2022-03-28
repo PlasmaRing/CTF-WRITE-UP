@@ -185,7 +185,7 @@ Reverse engineer this [Python program](https://github.com/PlasmaRing/CTF-WRITE-U
 
 **Description**  
 Can you get the flag?  
-Run this [Python program]() in the same directory as this [encrypted flag]()
+Run this [Python program](https://github.com/PlasmaRing/CTF-WRITE-UP/blob/9ac796a26646b2403c26b1ad7809177f677f2278/picoCTF%202022/FILE/bloat/bloat.flag.py) in the same directory as this [encrypted flag](https://github.com/PlasmaRing/CTF-WRITE-UP/blob/9ac796a26646b2403c26b1ad7809177f677f2278/picoCTF%202022/FILE/bloat/flag.txt.enc)
 
 **Solution [INA]**  
 
@@ -197,7 +197,7 @@ Run this [Python program]() in the same directory as this [encrypted flag]()
 
 **Description**  
 Can you get the flag?  
-Reverse engineer this [Java program]()
+Reverse engineer this [Java program](https://github.com/PlasmaRing/CTF-WRITE-UP/blob/9ac796a26646b2403c26b1ad7809177f677f2278/picoCTF%202022/FILE/KeygenMe.class)
 
 **Hints 1**  
 Use a decompiler for Java!
@@ -212,7 +212,7 @@ Use a decompiler for Java!
 
 **Description**  
 Can you get the flag?  
-Reverse engineer this [binary]()
+Reverse engineer this [binary](https://github.com/PlasmaRing/CTF-WRITE-UP/blob/9ac796a26646b2403c26b1ad7809177f677f2278/picoCTF%202022/FILE/bbbbloat)
 
 **Solution [INA]**  
 
@@ -223,8 +223,8 @@ Reverse engineer this [binary]()
 ## unpackme
 
 **Description**  
-Can you get the flag?
-Reverse engineer this [binary]()
+Can you get the flag?  
+Reverse engineer this [binary](https://github.com/PlasmaRing/CTF-WRITE-UP/blob/9ac796a26646b2403c26b1ad7809177f677f2278/picoCTF%202022/FILE/unpackme-upx)
 
 **Hints 1**  
 What is UPX?
