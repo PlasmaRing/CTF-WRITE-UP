@@ -15,8 +15,8 @@ MAR 15 - MAR 30 | 2022
 | 8  | Fresh Java | Reverse Engineering | 200 | picoCTF{700l1ng_r3qu1r3d_0c3de6a4}
 | 9  | Bbbbloat | Reverse Engineering | 300 | picoCTF{cu7_7h3_bl047_cbc074c0}
 | 10 | unpackme | Reverse Engineering | 300 | picoCTF{up><_m3_f7w_a6870b23}
-| 11 | basic-mod1 | Cryptography | 100 | 
-| 12 | basic-mod2 | Cryptography | 100 | 
+| 11 | basic-mod1 | Cryptography | 100 | picoCTF{R0UND_N_R0UND_B0D5F596}
+| 12 | basic-mod2 | Cryptography | 100 | picoCTF{1NV3R53LY_H4RD_374BE7BB}
 | 13 | credstuff | Cryptography | 100 | picoCTF{C7r1F_54V35_71M3}
 | 14 | morse-code | Cryptography | 100 | picoCTF{wh47_h47h_90d_w20u9h7}
 | 15 | rail-fence | Cryptography | 100 | picoCTF{WH3R3_D035_7H3_F3NC3_8361N_4ND_3ND_318F0948}
@@ -307,10 +307,11 @@ mod 37 means modulo 37. It gives the remainder of a number after being divided b
 2. Input **message** dan **37** sebagai modulonya
 3. Didapati hasil: `17 26 20 13 3 36 13 36 17 26 20 13 3 36 1 26 3 31 5 31 35 32`
 4. Ubah **string angka** menjadi **string** sesuai ketentuan pada deskripsi
-5. Didapati hasil: 
+5. Didapati hasil: `R0UND_N_R0UND_B0D5F596`
 6. FLAG DIPEROLEH
 
 **Flag**  
+`picoCTF{R0UND_N_R0UND_B0D5F596}`
 
 
 ## basic-mod2
@@ -336,13 +337,13 @@ It's recommended to use a tool to find the modular inverses
 2. Input **message** dan **41** sebagai modulonya
 3. Didapati hasil: `22 3 28 26 16 9 26 24 23 10 36 4 16 31 10 26 35 4 21 33 35 21 21`
 4. **Invers modulo 41** pada setiap angka
-5. Didapati hasil: 
+5. Didapati hasil: `28 14 22 30 18 32 30 12 25 37 8 31 18 4 37 30 34 31 2 5 34 2 2`
 6. Ubah **string angka** menjadi **string** sesuai ketentuan pada deskripsi
-7. Didapati hasil: 
+7. Didapati hasil: `1NV3R53LY_H4RD_374BE7BB`
 8. FLAG DIPEROLEH
 
 **Flag**  
-
+`picoCTF{1NV3R53LY_H4RD_374BE7BB}`
 
 ## credstuff
 
@@ -392,6 +393,7 @@ Audacity is a really good program to analyze morse code audio.
 
 **Flag**  
 `picoCTF{wh47_h47h_90d_w20u9h7}`
+
 
 ## rail-fence
 
@@ -673,7 +675,7 @@ How can you be sure of the redaction?
 
 **Description**  
 Can you get the flag?  
-Go to this website and see what you can discover.
+Go to this website and see what you can discover.  
 WEBSITE: http://saturn.picoctf.net:52811/
 
 **Hints 1**  
@@ -696,8 +698,8 @@ Is there more code than what the inspector initially shows?
 ## Inspect HTML
 
 **Description**  
-Can you get the flag?
-Go to this website and see what you can discover.
+Can you get the flag?  
+Go to this website and see what you can discover.  
 WEBSITE: http://saturn.picoctf.net:60935/
 
 **Hints 1**  
@@ -716,8 +718,8 @@ What is the web inspector in web browsers?
 ## Local Authority
 
 **Description**  
-Can you get the flag?
-Go to this website and see what you can discover.
+Can you get the flag?  
+Go to this website and see what you can discover.  
 WEBSITE: http://saturn.picoctf.net:51419/
 
 **Hints 1**  
@@ -740,8 +742,8 @@ How is the password checked on this website?
 ## Power Cookie
 
 **Description**  
-Can you get the flag?
-Go to this website and see what you can discover.
+Can you get the flag?  
+Go to this website and see what you can discover.  
 WEBSITE: http://saturn.picoctf.net:51419/
 
 **Hints 1**  
