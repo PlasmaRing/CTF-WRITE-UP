@@ -1,0 +1,3 @@
+Desc: time is money, money is seed
+
+flag format: anjay{.*}

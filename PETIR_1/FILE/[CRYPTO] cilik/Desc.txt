@@ -1,0 +1,5 @@
+Desc: kecil kecil cabe ijo
+
+Format flag: anjay{.*}
+
+tips: always use 'from Crypto.Util.number import *' for challenge like this, it's good for u
