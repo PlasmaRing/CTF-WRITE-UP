@@ -25,16 +25,16 @@ bruteforce or IDA?
 3. Disini dapat dianalisis bahwa program meminta user menginput sebuah angka
 4. angka tersebut memiliki syarat yang dapat dianalisis
 
-Berikut analisis angka
+Berikut analisis angka  
 ![image](https://user-images.githubusercontent.com/92077284/167344194-3cad2619-14cc-4c55-8266-dfa2e503db48.png)
 ![image](https://user-images.githubusercontent.com/92077284/167344212-b606165c-6cf2-418c-9040-39a580a6c8ac.png)
 ![image](https://user-images.githubusercontent.com/92077284/167344254-bd4beb56-0ff9-479b-83a4-bd0c8e917a5a.png)
-5. Diketahui bahwa __bob == 1692__ untuk menghasilkan return __exit(1)
-6. Maka __yeet = 1692 + 8184 = 9876__ 
-7. Pada validasi __gemink(nah), angka 9876 lolos__
-8. Pada validasi awal __ez(numb), angka 9876 lolos__
-9. Diperoleh angka adalah __9876__
-10. Proses cek dengan menjalankan __hahah.exe__
+5. Diketahui bahwa __bob == 1692__ untuk menghasilkan return __exit(1)  
+6. Maka __yeet = 1692 + 8184 = 9876__  
+7. Pada validasi __gemink(nah), angka 9876 lolos__  
+8. Pada validasi awal __ez(numb), angka 9876 lolos__  
+9. Diperoleh angka adalah __9876__  
+10. Proses cek dengan menjalankan __hahah.exe__  
 11.
 12. FLAG DIPEROLEH
 
