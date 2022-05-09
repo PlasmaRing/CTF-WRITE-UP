@@ -35,11 +35,11 @@ Berikut analisis angka
 8. Pada validasi awal __ez(numb), angka 9876 lolos__  
 9. Diperoleh angka adalah __9876__  
 10. Proses cek dengan menjalankan __hahah.exe__  
-11.
-12. FLAG DIPEROLEH
+![image](https://user-images.githubusercontent.com/92077284/167345412-aa1dd78c-9172-4878-a95a-abd1af735881.png)
+11. FLAG DIPEROLEH
 
 **Flag**  
-``
+`anjay{9876}`
 
 
 ## biji waktu
