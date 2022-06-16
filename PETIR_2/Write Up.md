@@ -19,10 +19,10 @@ SETELAH 14 APR | 2022
 
 
 **Solution [INA]**  
-1. 
-2. 
-3. 
-4. FLAG DIPEROLEH
+1.  
+2.  
+3.  
+4. FLAG DIPEROLEH  
 
 **Flag**  
 ``
