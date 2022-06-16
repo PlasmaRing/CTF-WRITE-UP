@@ -6,7 +6,7 @@ APR 07 - APR 14 | 2022
 | No | Title               | Category              | Flag
 |----|---------------------|-----------------------|----------------------------
 | 1  | guess my number | Reverse Engineering | anjay{9876}
-| 2  | biji waktu | Reverse Engineering | anjay{}
+| 2  | biji waktu | Reverse Engineering | anjay{were_you_toooooooo_fast?}
 | 3  | ciilik | Cryptography | anjay{}
 
 # Reverse Engineering 
@@ -54,14 +54,29 @@ seednya pake srand(time), berarti cari timenya (kapan codingan tersebut dijalank
 program dijalankan ga lama sebelum adminnya upload soal, tapi kapan tepatnya?
 
 **Solution [INA]**  
-1. Download `run (1)` file
-2. Buka terminal, dan pergi ke __directory file__
-3. Ketik `chmod +x 'run(1)'` untuk membuat file __executable__
-4. Ketik `./'run(1)' Hello!`
-5. FLAG DIPEROLEH
+1. Analisa file `biji waktu` menggunakan IDA
+![image](https://user-images.githubusercontent.com/92077284/174102773-13ce6214-b9e5-4ee1-9270-491300c01274.png)
+![image](https://user-images.githubusercontent.com/92077284/174109251-28a19aba-f926-45c4-bd5d-13843ff4f091.png)
+
+file __biji waktu__ merupakan file yang akan membaca file dan akan __generate key__ lalu di simpan di `secret_message.enc`. Key yang akan di __generate__ akan di random sesuai dengan waktu key dibuat. Proses pembuatan key tertera pada foto kedua.
+
+2. Prediksi kapan admin membuat soal dengan melihat kapan admin memberikan soal `(admin memberikan soal pada 7 April 2022)`
+3. Tentukan __range timestamp__ menggunakan website `https://www.epochconverter.com` 
+`1649203200 - 6 April 2022 07:00 GMT+7
+1649376000 - 8 April 2022 07:00 GMT+7`
+
+4. Buat program untuk melakukan searching pada __range timestamp__ diatas
+Program : [JAWABAN.py](https://github.com/PlasmaRing/CTF-WRITE-UP/blob/88d10af4ebad36165dd1ba1a789a067f4a666142/PETIR_1/FILE/%5BREV%5D%20biji%20waktu/JAWABAN.py)
+![image](https://user-images.githubusercontent.com/92077284/174110176-32fec449-ce61-46ef-9149-5ec37d66eca4.png)
+Pada program ini, file akan membaca file `secret_message.enc` lalu melakukan searching pada __range timestamp__ lalu dikombinasikan dengan proses pembuatan key `key = libc.rand() % 50`. Lalu selama proses searching, apabila ditemukan kata __anjay__ maka program akan melakukan proses print. 
+
+5. Ketik `python3 JAWABAN.py` di terminal pada directory yang sama dengan `secret_message.enc`
+![image](https://user-images.githubusercontent.com/92077284/174112143-c1656e46-b552-4aec-bad7-3702eba56993.png)
+
+6. FLAG DIPEROLEH
 
 **Flag**  
-``
+`anjay{were_you_toooooooo_fast?}`
 
 # Cryptography
 ## cilik
