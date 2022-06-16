@@ -1,4 +1,4 @@
-# MENGPETIR 1
+# MENGPETIR DUA
 SETELAH 14 APR | 2022
 
 ## Overview
