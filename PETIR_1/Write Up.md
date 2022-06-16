@@ -7,7 +7,7 @@ APR 07 - APR 14 | 2022
 |----|---------------------|-----------------------|----------------------------
 | 1  | guess my number | Reverse Engineering | anjay{9876}
 | 2  | biji waktu | Reverse Engineering | anjay{were_you_toooooooo_fast?}
-| 3  | ciilik | Cryptography | anjay{}
+| 3  | ciilik | Cryptography | anjay{smol_e_big_prob}
 
 # Reverse Engineering 
 ## guess my number
@@ -91,16 +91,18 @@ always use 'from Crypto.Util.number import *' for challenge like this, it's good
 apa yang terjadi jika modulus (n) terlalu besar?
 
 **Solution [INA]**  
-1. Download `gdbme` file
-2. Buka terminal, dan pergi ke __directory file__
-3. Ketik `chmod +x gdbme` untuk membuat file __executable__
-4. Ketik `gdb gdbme`
-5. Ketik `(gdb) layout asm` untuk membuka layout gdb
-6. Ketik `break *(main+99)`
-7. Ketik `run`
-8. Ketik `jump *(main+104)`
-9. FLAG DIPEROLEH
-
+1. Analisa file [soal.py](https://github.com/PlasmaRing/CTF-WRITE-UP/blob/1caf068b38d9b5b9537bcb8b6926acffc06f9c8c/PETIR_1/FILE/%5BCRYPTO%5D%20cilik/soal.py) dan [output.txt](https://github.com/PlasmaRing/CTF-WRITE-UP/blob/1caf068b38d9b5b9537bcb8b6926acffc06f9c8c/PETIR_1/FILE/%5BCRYPTO%5D%20cilik/output.txt)  
+Dapat disimpulkan bahwa `soal.py` merupakan program yang akan mengenkripsi(RSA) file `flag.txt` hingga menjadi 3 Hasil `n` `e` `c`
+`n = 111608059781619170852839828034443904661723742247666541093694421979087592916726733937355961559809960318812149166254327137106754050143748244993585558173990814981362974435056892749037889802875531232447586715079753036462879448368543305433515392265660648503063126152560507280883180096204914171549293885623820656547`  
+`e = 5`  
+`c = 64370826219196693215525738278997084836250364144145087945488252034046370347129763699235756806845841623679802290054958371405384431222042372642769501377229428877300227374798208978565131190542920086065786726026703453551058295286771959711776368555490419235574299710349`  
+2. Dikarenakan nilai __n__ terlalu besar, maka dapat diduga bahwa `c = m^e = m^5`. Rumus nilai c dalam python `c = pow(m, e, n)`  
+3. Buat program yang dapat menghitung akar pangkat, agar dapat menentukan nilai __m__  lalu print nilai __m__ dalam wujud kalimat  
+Program : [KALKULASI.py](https://github.com/PlasmaRing/CTF-WRITE-UP/blob/1caf068b38d9b5b9537bcb8b6926acffc06f9c8c/PETIR_1/FILE/%5BCRYPTO%5D%20cilik/KALKULASI.py)  
+![image](https://user-images.githubusercontent.com/92077284/174117368-1b7e1dff-17f3-4fa2-9598-d478588f8e3b.png)
+4. Jalankan program  
+![image](https://user-images.githubusercontent.com/92077284/174117638-44e795f5-4573-4a74-80ec-71a2c16e58c1.png)
+5. FLAG DIPEROLEH
 
 **Flag**  
-``
+`anjay{smol_e_big_prob}`
