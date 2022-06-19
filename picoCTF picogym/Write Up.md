@@ -1,4 +1,4 @@
-# MENGPETIR DUA
+# picoCTF picogym
 WEB : `https://picoctf.org/`  
 
 ## Overview
