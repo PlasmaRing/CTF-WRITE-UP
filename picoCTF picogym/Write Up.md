@@ -6,7 +6,7 @@ WEB : `https://picoctf.org/`
 | No | Title               | Date              | Category                   | Flag                 | Points
 |----|---------------------|-------------------|----------------------------|----------------------|------------
 | 1  | Transformation | 19/6/2022 | Reverse Engineering | picoCTF{16_bits_inst34d_of_8_d52c6b93} | 20
-| 2  | keygenme-py | 21/6/2022 | Reverse Engineering | picoCTF{1n_7h3_|<3y_of_ac73dc29} | 30
+| 2  | keygenme-py | 21/6/2022 | Reverse Engineering | picoCTF{1n_7h3_I<3y_of_ac73dc29} | 30
 | 3  | 
 
 # Reverse Engineering 
