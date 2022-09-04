@@ -72,3 +72,20 @@ You may find some decoders online
 
 **Flag**  
 `picoCTF{1|\/|_4_p34|\|ut_f3bc410e}`
+
+## ARMssembly 0
+
+**Description**  
+What integer does this program print with arguments 266134863 and 1592237099? File: [chall.S](https://mercury.picoctf.net/static/104d6022bcea93f53083aeb61b134e8b/chall.S) Flag format: picoCTF{XXXXXXXX} -> (hex, lowercase, no 0x, and 32 bits. ex. 5614267 would be picoCTF{0055aabb})
+
+**Hints 1**  
+Simple compare
+
+**Solution [INA]**  
+1.  Buka file `chall.S` melalui terminal dengan mengetikan `vi chall.S`
+2.  Analisa file bagian **main**, sesuai dengan deskripsi soal, fokus pada apa yang akan di **print** program
+![image](https://user-images.githubusercontent.com/92077284/188314780-c6ba8575-d500-42a6-a327-649ac6a6d358.png)
+
+
+**Flag**  
+
