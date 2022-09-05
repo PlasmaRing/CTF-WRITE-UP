@@ -11,6 +11,7 @@ WEB : `https://picoctf.org/`
 | 4  | [ARMssembly 0](#armssembly-0) | 05/09/2022 | Reverse Engineering | picoCTF{5ee79c2b} | 40
 | 5  | [vault-door-training](#vault-door-training) | 05/09/2022 | Reverse Engineering | picoCTF{w4rm1ng_Up_w1tH_jAv4_3808d338b46} | 50
 | 6  | [speeds and feeds](#speeds-and-feeds) | 05/09/2022 | Reverse Engineering | picoCTF{num3r1cal_c0ntr0l_775375c7} | 50
+| 7  | [Shop](#shop) |  | Reverse Engineering | picoCTF{} | 50
 
 # Reverse Engineering 
 ## Transformation 
@@ -137,3 +138,13 @@ What language does a CNC machine use?
 
 **Flag**  
 `picoCTF{num3r1cal_c0ntr0l_775375c7}`
+
+## Shop
+
+**Description**  
+Best Stuff - Cheap Stuff, Buy Buy Buy... Store Instance: [source](https://mercury.picoctf.net/static/73724c199e55e6c056bb00e7bbfdfb38/source). The shop is open for business at **nc mercury.picoctf.net 10337**.
+
+**Hints 1**  
+Always check edge cases when programming
+
+**Solution [INA]**  
