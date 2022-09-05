@@ -112,7 +112,7 @@ The password is revealed in the program's source code.
 
 **Solution [INA]**  
 1.  Buka fie `VaultDoorTraining.java` menggunakan **vscode**
-2.  Analisa source code dan susun flagnya
+2.  Analisa source code dan susun flagnya  
 ![image](https://user-images.githubusercontent.com/92077284/188442331-9877126a-a51e-4351-a77f-ea6685d9f801.png)
 3.  FLAG DIPEROLEH
 
