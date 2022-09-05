@@ -8,7 +8,7 @@ WEB : `https://picoctf.org/`
 | 1  | [Transformation](#transformation) | 19/06/2022 | Reverse Engineering | picoCTF{16_bits_inst34d_of_8_d52c6b93} | 20
 | 2  | [keygenme-py](#keygenme-py) | 21/06/2022 | Reverse Engineering | picoCTF{1n_7h3_I<3y_of_ac73dc29} | 30
 | 3  | [crackme-py](#crackme-py) | 04/09/2022 | Reverse Engineering | picoCTF{1I\/I_4_p34I\Iut_f3bc410e} | 30
-
+| 4  | [ARMssembly 0](#armssembly-0) | 05/09/2022 | Reverse Engineering | picoCTF{5ee79c2b} | 30
 # Reverse Engineering 
 ## Transformation 
 
@@ -85,7 +85,17 @@ Simple compare
 1.  Buka file `chall.S` melalui terminal dengan mengetikan `vi chall.S`
 2.  Analisa file bagian **main**, sesuai dengan deskripsi soal, fokus pada apa yang akan di **print** program
 ![image](https://user-images.githubusercontent.com/92077284/188314780-c6ba8575-d500-42a6-a327-649ac6a6d358.png)
-
+3.  Program melakukan load dan menggubah ASCII to Integer **[atoi]**, value yang diload adalah `266134863` dan `1592237099`
+![image](https://user-images.githubusercontent.com/92077284/188421396-54ea3697-8a07-4c54-933a-b7500d4e1f27.png)
+![image](https://user-images.githubusercontent.com/92077284/188421484-b3c4dda9-f6ce-473a-84bd-474b6e703f7d.png)
+4.  Lalu **func1** dipanggil, dimana **func1** akan melakukan compare **[cmp]** pada 2 value tersebut. Disini `w1 =  266134863` dan `w0 = 1592237099`.  
+![image](https://user-images.githubusercontent.com/92077284/188421997-5445acb1-bb71-46ae-b843-3b2db993e036.png)
+5.  **[bls]** dapat diartikan sebagai **lower or same**, karena w1 lebih kecil dari w0 maka program memanggil **.L2** dan melakukan load value **w0**
+6.  Setelah itu kembali lagi ke **main**, dimana setelah itu akan memanggil **.LC0** yang akan melakukan print value
+![image](https://user-images.githubusercontent.com/92077284/188424487-a27cbc37-84dc-4d4f-9609-cd645589b2e9.png)
+![image](https://user-images.githubusercontent.com/92077284/188424525-db6d10bb-3d51-48de-be96-cf5c60366724.png)
+7.  Karena value yang akan di print dalam bentuk hex, maka `1592237099` diubah menjadi `0x5ee79c2b`, lalu rangkai flag sesuai ketentuan deskripsi
+8.  FLAG DIPEROLEH
 
 **Flag**  
-
+`picoCTF{5ee79c2b}`
