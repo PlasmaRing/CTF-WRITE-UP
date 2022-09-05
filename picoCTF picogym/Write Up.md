@@ -10,7 +10,7 @@ WEB : `https://picoctf.org/`
 | 3  | [crackme-py](#crackme-py) | 04/09/2022 | Reverse Engineering | picoCTF{1I\/I_4_p34I\Iut_f3bc410e} | 30
 | 4  | [ARMssembly 0](#armssembly-0) | 05/09/2022 | Reverse Engineering | picoCTF{5ee79c2b} | 40
 | 5  | [vault-door-training](#vault-door-training) | 05/09/2022 | Reverse Engineering | picoCTF{w4rm1ng_Up_w1tH_jAv4_3808d338b46} | 50
-| 6  | [speeds and feeds](#speeds-and-feeds) | | Reverse Engineering | | 50
+| 6  | [speeds and feeds](#speeds-and-feeds) | 05/09/2022 | Reverse Engineering | picoCTF{num3r1cal_c0ntr0l_775375c7} | 50
 
 # Reverse Engineering 
 ## Transformation 
@@ -129,5 +129,11 @@ There is something on my shop network running at **nc mercury.picoctf.net 53740*
 What language does a CNC machine use?
 
 **Solution [INA]**  
+1.  Jalankan `nc mercury.picoctf.net 53740` pada terminal linux
+2.  Diketahui bahwa disini ditemukan source code yang biasa digunakan oleh mesin CNC, yaitu `G CODE`
+3.  Copy source code, lalu paste pada **gcode online compiler** seperti https://nraynaud.github.io/webgcode/  
+![image](https://user-images.githubusercontent.com/92077284/188488182-6d8fa54c-0464-40fc-92f3-b2b45c909b66.png)
+4.  FLAG DIPEROLEH
 
 **Flag**  
+`picoCTF{num3r1cal_c0ntr0l_775375c7}`
