@@ -10,6 +10,7 @@ WEB : `https://picoctf.org/`
 | 3  | [crackme-py](#crackme-py) | 04/09/2022 | Reverse Engineering | picoCTF{1I\/I_4_p34I\Iut_f3bc410e} | 30
 | 4  | [ARMssembly 0](#armssembly-0) | 05/09/2022 | Reverse Engineering | picoCTF{5ee79c2b} | 40
 | 5  | [vault-door-training](#vault-door-training) | 05/09/2022 | Reverse Engineering | picoCTF{w4rm1ng_Up_w1tH_jAv4_3808d338b46} | 50
+| 6  | [speeds and feeds](#speeds-and-feeds) | | Reverse Engineering | | 50
 
 # Reverse Engineering 
 ## Transformation 
@@ -118,3 +119,15 @@ The password is revealed in the program's source code.
 
 **Flag**  
 `picoCTF{w4rm1ng_Up_w1tH_jAv4_3808d338b46}`
+
+## speeds and feeds
+
+**Description**  
+There is something on my shop network running at **nc mercury.picoctf.net 53740**, but I can't tell what it is. Can you?
+
+**Hints 1**  
+What language does a CNC machine use?
+
+**Solution [INA]**  
+
+**Flag**  
