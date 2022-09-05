@@ -9,6 +9,8 @@ WEB : `https://picoctf.org/`
 | 2  | [keygenme-py](#keygenme-py) | 21/06/2022 | Reverse Engineering | picoCTF{1n_7h3_I<3y_of_ac73dc29} | 30
 | 3  | [crackme-py](#crackme-py) | 04/09/2022 | Reverse Engineering | picoCTF{1I\/I_4_p34I\Iut_f3bc410e} | 30
 | 4  | [ARMssembly 0](#armssembly-0) | 05/09/2022 | Reverse Engineering | picoCTF{5ee79c2b} | 40
+| 5  | [vault-door-training](#vault-door-training) | 
+
 # Reverse Engineering 
 ## Transformation 
 
@@ -99,3 +101,14 @@ Simple compare
 
 **Flag**  
 `picoCTF{5ee79c2b}`
+
+## vault-door-training
+
+**Description**  
+Your mission is to enter Dr. Evil's laboratory and retrieve the blueprints for his Doomsday Project. The laboratory is protected by a series of locked vault doors. Each door is controlled by a computer and requires a password to open. Unfortunately, our undercover agents have not been able to obtain the secret passwords for the vault doors, but one of our junior agents obtained the source code for each vault's computer! You will need to read the source code for each level to figure out what the password is for that vault door. As a warmup, we have created a replica vault in our training facility. The source code for the training vault is here: [VaultDoorTraining.java](https://jupiter.challenges.picoctf.org/static/03c960ddcc761e6f7d1722d8e6212db3/VaultDoorTraining.java)  
+
+**Hints 1**  
+The password is revealed in the program's source code.
+
+**Solution [INA]**  
+1.  
