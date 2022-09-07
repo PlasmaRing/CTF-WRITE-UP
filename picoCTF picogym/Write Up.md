@@ -11,7 +11,7 @@ WEB : `https://picoctf.org/`
 | 4  | [ARMssembly 0](#armssembly-0) | 05/09/2022 | Reverse Engineering | picoCTF{5ee79c2b} | 40
 | 5  | [vault-door-training](#vault-door-training) | 05/09/2022 | Reverse Engineering | picoCTF{w4rm1ng_Up_w1tH_jAv4_3808d338b46} | 50
 | 6  | [speeds and feeds](#speeds-and-feeds) | 05/09/2022 | Reverse Engineering | picoCTF{num3r1cal_c0ntr0l_775375c7} | 50
-| 7  | [Shop](#shop) |  | Reverse Engineering | picoCTF{} | 50
+| 7  | [Shop](#shop) | 07/09/2022 | Reverse Engineering | picoCTF{b4d_brogrammer_3da34a8f} | 50
 
 # Reverse Engineering 
 ## Transformation 
@@ -148,3 +148,19 @@ Best Stuff - Cheap Stuff, Buy Buy Buy... Store Instance: [source](https://mercur
 Always check edge cases when programming
 
 **Solution [INA]**  
+1.  Download source file untuk melakukan analisis
+2.  Diketahui bahwa memerlukan **100 coins** untuk melakukan pembelian flag  
+![image](https://user-images.githubusercontent.com/92077284/188860158-bdcc9e4c-693a-499d-9a7c-1006404d5ebf.png)  
+3.  Analisa source file menggunakan *decompiler tools* seperti IDA PRO
+4.  Didapati bahwa terdapat celah test case yang dapat menambah coins. Hal ini dapat ditemukan pada bagian **main_menu**  
+![image](https://user-images.githubusercontent.com/92077284/188861371-639c3acd-bb27-4f47-a694-4daee5f8ec4d.png)  
+5.  Karena disini tertulis `v15 = wallet - *_num * inv.array[v14].price;` maka disimpulkan dapat membeli dengan jumlah minus. *Note : minus * minus = plus*
+6.  Disini buka terminal lalu ketik **nc mercury.picoctf.net 10337**, pilih **Quiet Quiches atau Average Apple**, lalu masukin input negatif sebagai jumlahnya  
+![image](https://user-images.githubusercontent.com/92077284/188862186-93f3543d-7a6c-46c9-a291-7b46a7ab4212.png)  
+7.  Karena coin sudah mencukupi maka kita dapat membeli **Fruitful Flag**  
+![image](https://user-images.githubusercontent.com/92077284/188862469-dd6f96cf-e4f1-4f34-b823-6293dd3ec5c8.png)  
+8.  Ubah ASCII to TEXT
+9.  FLAG DIPEROLEH
+
+**Flag**  
+`picoCTF{b4d_brogrammer_3da34a8f}`
