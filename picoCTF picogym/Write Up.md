@@ -247,3 +247,31 @@ use go tool objdump or ghidra
 
 **Flag**  
 `picoCTF{p1kap1ka_p1c09ad40dca}`
+
+## gogo
+
+**Description**  
+there's crypto in here but the challenge is not crypto... 🤔  
+Download FILE [not-crypto](https://artifacts.picoctf.net/picoMini+by+redpwn/Reverse+Engineering/not-crypto/not-crypto)
+
+**Solution [INA]**  
+1.  Download file `not-crypto` lalu buka terminal
+2.  Ketik `gdb ./not-crypto` lalu ketik `i func` untuk memeriksa **function**  
+![image](https://user-images.githubusercontent.com/92077284/189191621-f6bd503e-f5f1-449b-8671-b7d27ee75444.png)
+3.  Ketik `disassem memcmp` karena disini tidak ada fungsi *main* , Ketika program ini di *decompile* dengan tools seperti IDA, **memcmp** juga digunakan sebagai validator dari string yang akan diinput.  
+![image](https://user-images.githubusercontent.com/92077284/189192135-f9c48f96-561c-4f7d-af75-335dc61e8160.png)
+![image](https://user-images.githubusercontent.com/92077284/189191747-10692c8a-0659-4a9a-a4ac-0c27f727198d.png)
+4.  Setelah itu diketahui bahwa lokasi memcmp adalah pada `0x0000000000001060`, maka dari itu dapat diketikan `b * 0x0000000000001060` lalu `run`  
+![image](https://user-images.githubusercontent.com/92077284/189192825-a2536871-4306-4493-bf26-28fd56066ec0.png)
+5.  Memori belum bisa diakses karena belum menggunakan **base address**, ketik lagi `disassem memcmp` untuk memeriksa lokasi yang sudah diperbaharui, lalu `delete 1` untuk menghapus `breakpoint awal`  
+![image](https://user-images.githubusercontent.com/92077284/189193492-d8d9ffcf-ac5b-4454-81ed-fae1d8da2c18.png)
+6.  Didapati lokasi baru di `0x0000555555555060` lalu break lagi dengan mengetikan `break * 0x0000555555555060`, lalu `run` dan input dengan string asal  
+![image](https://user-images.githubusercontent.com/92077284/189194077-977396ee-75ea-4fb4-8b7e-9fd5098c7a35.png)
+7.  Pada `$rdi   : 0x007fffffffde50` ditemukan flag namun belum utuh karena terlalu panjang  
+![image](https://user-images.githubusercontent.com/92077284/189194809-cb2a9aaa-09ba-435e-a646-594e18915580.png)
+8.  Ketik  `x/s 0x007fffffffde50` untuk memperoleh flag  
+![image](https://user-images.githubusercontent.com/92077284/189195002-ee8dca89-60c3-4dbd-9d47-8e646b22e028.png)
+9.  FLAG DIPEROLEH
+
+**Flag**  
+`picoCTF{c0mp1l3r_0pt1m1z4t10n_15_pur3_w1z4rdry_but_n0_pr0bl3m?}`
