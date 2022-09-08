@@ -249,7 +249,7 @@ use go tool objdump or ghidra
 **Flag**  
 `picoCTF{p1kap1ka_p1c09ad40dca}`
 
-## gogo
+## not crypto
 
 **Description**  
 there's crypto in here but the challenge is not crypto... 🤔  
