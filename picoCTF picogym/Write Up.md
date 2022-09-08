@@ -17,6 +17,7 @@ WEB : `https://picoctf.org/`
 | 10  | [vault-door-1](#vault-door-1) | 08/09/2022 | Reverse Engineering | picoCTF{d35cr4mbl3_tH3_cH4r4cT3r5_f6daf4} | 100
 | 11  | [Hurry up! Wait!](#hurry-up-wait) | 08/09/2022 | Reverse Engineering | picoCTF{d15a5m_ftw_a82650a} | 100
 | 12  | [gogo](#gogo) | 08/09/2022 | Reverse Engineering | picoCTF{p1kap1ka_p1c09ad40dca} | 110 
+| 13  | [not crypto](#not-crypto) | 09/09/2022 | Reverse Engineering | picoCTF{c0mp1l3r_0pt1m1z4t10n_15_pur3_w1z4rdry_but_n0_pr0bl3m?} | 150 
 
 # Reverse Engineering 
 ## Transformation 
@@ -266,7 +267,7 @@ Download FILE [not-crypto](https://artifacts.picoctf.net/picoMini+by+redpwn/Reve
 5.  Memori belum bisa diakses karena belum menggunakan **base address**, ketik lagi `disassem memcmp` untuk memeriksa lokasi yang sudah diperbaharui, lalu `delete 1` untuk menghapus `breakpoint awal`  
 ![image](https://user-images.githubusercontent.com/92077284/189193492-d8d9ffcf-ac5b-4454-81ed-fae1d8da2c18.png)
 6.  Didapati lokasi baru di `0x0000555555555060` lalu break lagi dengan mengetikan `break * 0x0000555555555060`, lalu `run` dan input dengan string asal  
-![image](https://user-images.githubusercontent.com/92077284/189194077-977396ee-75ea-4fb4-8b7e-9fd5098c7a35.png)
+![image](https://user-images.githubusercontent.com/92077284/189195380-3e53f445-24fa-4add-8656-ca4befd17080.png)
 7.  Pada `$rdi   : 0x007fffffffde50` ditemukan flag namun belum utuh karena terlalu panjang  
 ![image](https://user-images.githubusercontent.com/92077284/189194809-cb2a9aaa-09ba-435e-a646-594e18915580.png)
 8.  Ketik  `x/s 0x007fffffffde50` untuk memperoleh flag  
