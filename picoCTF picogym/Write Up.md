@@ -208,3 +208,33 @@ Look up the charAt() method online.
 
 **Flag**  
 `picoCTF{d15a5m_ftw_a82650a}`
+
+## gogo
+
+**Description**  
+Hmmm this is a weird file... [enter_password](https://mercury.picoctf.net/static/de0c0cd34d8d819b915dc37081372c7a/enter_password). There is a instance of the service running at **mercury.picoctf.net:47423**.
+
+**Hints 1**  
+use go tool objdump or ghidra
+
+**Solution [INA]**  
+1.  Download file `enter_password` lalu masukan file ke **decompiler** seperti IDA PRO
+2.  Pergi ke bagian **main_checkPassword**  
+![image](https://user-images.githubusercontent.com/92077284/189170099-ac8f27aa-8309-46be-80ac-0fa1fca956a0.png)
+3.  Dianalisa bahwa input string berjumlah **32** dan disini terdapat perintah **XOR** `(key[v1] ^ input.str[v1]) == v4[v1]`
+4.  Masuk ke text view agar mengetahui nilai hex keduanya  
+![image](https://user-images.githubusercontent.com/92077284/189170965-f583a68d-2417-4b76-9cc6-c729f8b2f11f.png)  
+![image](https://user-images.githubusercontent.com/92077284/189171093-16f6a55c-7e8d-4d50-9d42-8db8fe600e1d.png)
+5.  Masuk ke terminal dengan command `gdb ./enter_password`, lalu buat breakpoints di **0x80d4b2d** dengan command `break *0x80d4b2d` agar nantinya dapat membaca hex value di `[esp+eax+44h+key]` dan `[esp+eax+44h+var_20]`
+6.  Ketik `run` lalu masukan input asal sebanyak 32 digit  
+![image](https://user-images.githubusercontent.com/92077284/189173403-b4cfc72a-cb09-4117-b3de-eafe2387e39b.png)
+![image](https://user-images.githubusercontent.com/92077284/189173669-d617f25a-cc6b-4755-ba4d-7a23b4151cb0.png)
+7.  Ketik `hexdump byte $esp+0x4` dan `hexdump byte $esp+0x24`untuk mendapatkan **key dan hex value satunya**
+![image](https://user-images.githubusercontent.com/92077284/189174082-3283df5a-c6d6-42d3-80bb-ca153f49f754.png)
+![image](https://user-images.githubusercontent.com/92077284/189175229-6d302815-7ab2-4503-856d-361898f33f55.png)
+8.  Didapati key(ASCII): `861836f13e3d627dfa375bdb8389214e` dan  hex value satunya: `4a53475d414503545d025a0a5357450d05005d555410010e4155574b45504601`
+9.  Gunakan Online XOR Calculator, seperti **https://xor.pw/**  
+![image](https://user-images.githubusercontent.com/92077284/189176276-9179d285-f832-4462-b513-5d5c4bea6c0f.png)
+10. Didapati hasil XOR adalah `reverseengineericanbarelyforward`
+11. Masukan hasil XOR kedalam **mercury.picoctf.net 47423**  
+![image](https://user-images.githubusercontent.com/92077284/189177097-9173d232-5c44-4039-8a78-362511bd9bec.png)
