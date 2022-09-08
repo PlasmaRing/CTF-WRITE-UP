@@ -12,6 +12,9 @@ WEB : `https://picoctf.org/`
 | 5  | [vault-door-training](#vault-door-training) | 05/09/2022 | Reverse Engineering | picoCTF{w4rm1ng_Up_w1tH_jAv4_3808d338b46} | 50
 | 6  | [speeds and feeds](#speeds-and-feeds) | 05/09/2022 | Reverse Engineering | picoCTF{num3r1cal_c0ntr0l_775375c7} | 50
 | 7  | [Shop](#shop) | 07/09/2022 | Reverse Engineering | picoCTF{b4d_brogrammer_3da34a8f} | 50
+| 8  | [ARMssembly 1](#armssembly-1) |  | Reverse Engineering | picoCTF{} | 70
+| 9  | [ARMssembly 2](#armssembly-2) |  | Reverse Engineering | picoCTF{} | 90
+| 10  | [vault-door-1](#vault-door-1) | 08/09/2022 | Reverse Engineering | picoCTF{d35cr4mbl3_tH3_cH4r4cT3r5_f6daf4} | 100
 
 # Reverse Engineering 
 ## Transformation 
@@ -164,3 +167,21 @@ Always check edge cases when programming
 
 **Flag**  
 `picoCTF{b4d_brogrammer_3da34a8f}`
+
+## vault-door-1
+
+**Description**  
+This vault uses some complicated arrays! I hope you can make sense of it, special agent. The source code for this vault is here: [VaultDoor1.java](https://jupiter.challenges.picoctf.org/static/87e103a8db01087de9ccf5a7a022ddf8/VaultDoor1.java)
+
+**Hints 1**  
+Look up the charAt() method online.
+
+**Solution [INA]**  
+1.  Download file `VaultDoor1.java` lalu buka file
+2.  Pada source file terdapat bagian **flag checker**
+3.  Susun urutan flag yang masih teracak  
+![image](https://user-images.githubusercontent.com/92077284/189050827-8775bda1-e44b-408f-b57e-d6c42fba96c8.png)
+4.  FLAG DIPEROLEH
+
+**Flag**  
+`picoCTF{d35cr4mbl3_tH3_cH4r4cT3r5_f6daf4}`
