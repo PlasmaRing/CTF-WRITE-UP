@@ -15,7 +15,8 @@ WEB : `https://picoctf.org/`
 | 8  | [ARMssembly 1](#armssembly-1) |  | Reverse Engineering | picoCTF{} | 70
 | 9  | [ARMssembly 2](#armssembly-2) |  | Reverse Engineering | picoCTF{} | 90
 | 10  | [vault-door-1](#vault-door-1) | 08/09/2022 | Reverse Engineering | picoCTF{d35cr4mbl3_tH3_cH4r4cT3r5_f6daf4} | 100
-| 11  | [Hurry up! Wait!](#hurry-up!-wait!) | 08/09/2022 | Reverse Engineering | picoCTF{d15a5m_ftw_a82650a} | 100
+| 11  | [Hurry up! Wait!](#hurry-up-wait) | 08/09/2022 | Reverse Engineering | picoCTF{d15a5m_ftw_a82650a} | 100
+| 12  | [gogo](#gogo) | 08/09/2022 | Reverse Engineering | picoCTF{p1kap1ka_p1c09ad40dca} | 110 
 
 # Reverse Engineering 
 ## Transformation 
@@ -237,4 +238,12 @@ use go tool objdump or ghidra
 ![image](https://user-images.githubusercontent.com/92077284/189176276-9179d285-f832-4462-b513-5d5c4bea6c0f.png)
 10. Didapati hasil XOR adalah `reverseengineericanbarelyforward`
 11. Masukan hasil XOR kedalam **mercury.picoctf.net 47423**  
-![image](https://user-images.githubusercontent.com/92077284/189177097-9173d232-5c44-4039-8a78-362511bd9bec.png)
+![image](https://user-images.githubusercontent.com/92077284/189178665-3c60aa65-bc15-4046-ab6b-3c20bf64525f.png)
+12. Masukan key: `861836f13e3d627dfa375bdb8389214e` kedalam *online hash decryptor* seperti **https://hashes.com/en/decrypt/hash**  
+![image](https://user-images.githubusercontent.com/92077284/189177788-21a48087-0921-4b78-a72e-32a9ea4b69da.png)
+13. Ditemukan hasil decrypt: `goldfish`, masukan kembali kedalam terminal  
+![image](https://user-images.githubusercontent.com/92077284/189178760-a54c9b90-9d40-4ff0-90c4-4d43361035bc.png)
+14. FLAG DIPEROLEH
+
+**Flag**  
+`picoCTF{p1kap1ka_p1c09ad40dca}`
