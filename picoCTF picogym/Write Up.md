@@ -15,6 +15,7 @@ WEB : `https://picoctf.org/`
 | 8  | [ARMssembly 1](#armssembly-1) |  | Reverse Engineering | picoCTF{} | 70
 | 9  | [ARMssembly 2](#armssembly-2) |  | Reverse Engineering | picoCTF{} | 90
 | 10  | [vault-door-1](#vault-door-1) | 08/09/2022 | Reverse Engineering | picoCTF{d35cr4mbl3_tH3_cH4r4cT3r5_f6daf4} | 100
+| 11  | [Hurry up! Wait!](#hurry-up!-wait!) | 08/09/2022 | Reverse Engineering | picoCTF{d15a5m_ftw_a82650a} | 100
 
 # Reverse Engineering 
 ## Transformation 
@@ -185,3 +186,25 @@ Look up the charAt() method online.
 
 **Flag**  
 `picoCTF{d35cr4mbl3_tH3_cH4r4cT3r5_f6daf4}`
+
+## Hurry up! Wait!
+
+**Description**  
+[svchost.exe](https://mercury.picoctf.net/static/18afff80df59ffe13188a4907089ec8d/svchost.exe)
+
+**Solution [INA]**  
+1.  Download file `svchost.exe` lalu masukan file ke **decompiler** seperti IDA
+2.  Pergi menuju **main**  
+![image](https://user-images.githubusercontent.com/92077284/189061562-51bc529c-fad1-4a47-8353-6f16d62c1d86.png)
+3.  Pergi menuju **sub_298A()**  
+![image](https://user-images.githubusercontent.com/92077284/189061744-1372a61e-3c90-4771-b4e0-3a73842f23ef.png)
+4.  Klik salah satu **sub**, seperti pada contoh **sub_2616()**  
+![image](https://user-images.githubusercontent.com/92077284/189061924-f5afd259-600e-4d9a-99c6-6f62b1626f8e.png)
+5.  Klik **&unk_2CD8**  
+![image](https://user-images.githubusercontent.com/92077284/189062138-b9b5ca0d-142a-40ba-8765-101f33b941b9.png)
+6.  Diketahui bahwa sub ini menyimpan huruf `p`, sesuai dengan format flag pertama: `picoCTF{}`
+7.  Lakukan pada sub lainnya
+8.  FLAG DIPEROLEH
+
+**Flag**  
+`picoCTF{d15a5m_ftw_a82650a}`
