@@ -230,7 +230,7 @@ use go tool objdump or ghidra
 6.  Ketik `run` lalu masukan input asal sebanyak 32 digit  
 ![image](https://user-images.githubusercontent.com/92077284/189173403-b4cfc72a-cb09-4117-b3de-eafe2387e39b.png)
 ![image](https://user-images.githubusercontent.com/92077284/189173669-d617f25a-cc6b-4755-ba4d-7a23b4151cb0.png)
-7.  Ketik `hexdump byte $esp+0x4` dan `hexdump byte $esp+0x24`untuk mendapatkan **key dan hex value satunya**
+7.  Ketik `hexdump byte $esp+0x4` dan `hexdump byte $esp+0x24`untuk mendapatkan **key dan hex value satunya**  
 ![image](https://user-images.githubusercontent.com/92077284/189174082-3283df5a-c6d6-42d3-80bb-ca153f49f754.png)
 ![image](https://user-images.githubusercontent.com/92077284/189175229-6d302815-7ab2-4503-856d-361898f33f55.png)
 8.  Didapati key(ASCII): `861836f13e3d627dfa375bdb8389214e` dan  hex value satunya: `4a53475d414503545d025a0a5357450d05005d555410010e4155574b45504601`
