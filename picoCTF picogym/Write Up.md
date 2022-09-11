@@ -276,3 +276,13 @@ Download FILE [not-crypto](https://artifacts.picoctf.net/picoMini+by+redpwn/Reve
 
 **Flag**  
 `picoCTF{c0mp1l3r_0pt1m1z4t10n_15_pur3_w1z4rdry_but_n0_pr0bl3m?}`
+
+## ARMssembly 1
+
+**Description**  
+For what argument does this program print `win` with variables 87, 3 and 3? File: [chall_1.S](https://mercury.picoctf.net/static/52fa2dfbc7fb145f0a4bf7fd2a89fc49/chall_1.S) Flag format: picoCTF{XXXXXXXX} -> (hex, lowercase, no 0x, and 32 bits. ex. 5614267 would be picoCTF{0055aabb})
+
+**Hints 1**  
+Shifts
+
+**Solution [INA]**  
