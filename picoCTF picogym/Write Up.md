@@ -12,7 +12,7 @@ WEB : `https://picoctf.org/`
 | 5  | [vault-door-training](#vault-door-training) | 05/09/2022 | Reverse Engineering | picoCTF{w4rm1ng_Up_w1tH_jAv4_3808d338b46} | 50
 | 6  | [speeds and feeds](#speeds-and-feeds) | 05/09/2022 | Reverse Engineering | picoCTF{num3r1cal_c0ntr0l_775375c7} | 50
 | 7  | [Shop](#shop) | 07/09/2022 | Reverse Engineering | picoCTF{b4d_brogrammer_3da34a8f} | 50
-| 8  | [ARMssembly 1](#armssembly-1) |  | Reverse Engineering | picoCTF{} | 70
+| 8  | [ARMssembly 1](#armssembly-1) | 12/9/2022 | Reverse Engineering | picoCTF{000000e8} | 70
 | 9  | [ARMssembly 2](#armssembly-2) |  | Reverse Engineering | picoCTF{} | 90
 | 10  | [vault-door-1](#vault-door-1) | 08/09/2022 | Reverse Engineering | picoCTF{d35cr4mbl3_tH3_cH4r4cT3r5_f6daf4} | 100
 | 11  | [Hurry up! Wait!](#hurry-up-wait) | 08/09/2022 | Reverse Engineering | picoCTF{d15a5m_ftw_a82650a} | 100
@@ -286,3 +286,19 @@ For what argument does this program print `win` with variables 87, 3 and 3? File
 Shifts
 
 **Solution [INA]**  
+1.  Buka file `chall.S` menggunakan **vs code**
+2.  Analisa file bagian **main** untuk mengetahui bagaimana input akan di proses  
+![image](https://user-images.githubusercontent.com/92077284/189582037-1d2c61ab-4e8b-4fea-af9b-cd6146f1bb4f.png)
+3.  Diketahui bahwa input akan diproses masuk ke **func** lalu hasilnya akan di **compare dengan 0**  
+![image](https://user-images.githubusercontent.com/92077284/189582914-83696e57-e4b9-44ab-a630-03468873df1d.png)
+![image](https://user-images.githubusercontent.com/92077284/189582803-15df37f6-6ab9-4946-88be-4692e8aaa663.png)
+4.  Setelah dianalisis, didapati hasil akhir berupa `w0 = (232 - INPUT VALUE)`
+5.  Analisis kembali **main**  
+![image](https://user-images.githubusercontent.com/92077284/189583170-283666f8-4b73-4bed-97c7-633d1c5e3c5f.png)
+![image](https://user-images.githubusercontent.com/92077284/189583208-1a5ff75a-23ba-48f8-b62a-dad8796256be.png)
+6.  Apabila hasil compare **tidak 0** maka file akan lanjut ke `.L4` dan ke `.LC1` dimana akan menghasilkan return **"You Lose :("**
+7.  Maka dari itu hasil compare harus **0**, sehingga input value harus **232**, hex value dari 232 adalah **e8**
+8.  FLAG DIPEROLEH
+
+**Flag**  
+`picoCTF{000000e8}`
