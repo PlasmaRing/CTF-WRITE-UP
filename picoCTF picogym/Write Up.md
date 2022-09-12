@@ -286,7 +286,7 @@ For what argument does this program print `win` with variables 87, 3 and 3? File
 Shifts
 
 **Solution [INA]**  
-1.  Buka file `chall.S` menggunakan **vs code**
+1.  Buka file `chall_1.S` menggunakan **vs code**
 2.  Analisa file bagian **main** untuk mengetahui bagaimana input akan di proses  
 ![image](https://user-images.githubusercontent.com/92077284/189582037-1d2c61ab-4e8b-4fea-af9b-cd6146f1bb4f.png)
 3.  Diketahui bahwa input akan diproses masuk ke **func** lalu hasilnya akan di **compare dengan 0**  
@@ -302,3 +302,25 @@ Shifts
 
 **Flag**  
 `picoCTF{000000e8}`
+
+## ARMssembly 2
+
+**Description**  
+What integer does this program print with argument 3736234946? File: [chall_2.S](https://mercury.picoctf.net/static/f4fda7d5533a6a119d3b5415c64101ad/chall_2.S) Flag format: picoCTF{XXXXXXXX} -> (hex, lowercase, no 0x, and 32 bits. ex. 5614267 would be picoCTF{0055aabb})
+
+**Hints 1**  
+Loops
+
+**Solution [INA]**  
+1.  Buka file `chall_2.S` menggunakan **vs code**
+2.  Analisa file bagian **main** untuk mengetahui bagaimana jalannya program dan apa yang akan di print  
+![image](https://user-images.githubusercontent.com/92077284/189593164-2936ac48-f074-4cdc-a685-65cef6af3918.png)
+3.  Disini setelah menerima input, input di lanjutkan ke **func1**  
+![image](https://user-images.githubusercontent.com/92077284/189595255-3acd86f4-1fcc-490a-91fc-f8010fd13730.png)
+![image](https://user-images.githubusercontent.com/92077284/189596089-0c3e6c63-6a0d-46c6-a50c-4aafe0623177.png)
+4.  Dapat disimpulkan pada **func1** menyimpan beberapa value, `[sp+12] = 3736234946` `[sp+24] & [sp+28] = 0`
+5.  Lalu lanjut ke **.L2**, disini akan di compare antara `[sp+28] & [sp+12]`, pada situasi ini `w1 < w0` **bcc .L3** in akan melakukan looping hingga `w1 >= w0`
+6.  Pada **.L3** akan dilakukan penambahan value sebagai berikut `[sp+24] +3` dan `[sp+28] +1`
+7.  Maka dapat disimpulkan bahwa untuk membuat `w1 >= w0` maka akan terjadi **3736234946 loop**, sesuai dengan **.L3**, `[sp+24] +3` maka hasil akhirnya `[sp+24] = 3 x 3736234946 = 11208704838`. Value ini menjadi return di **.L2**
+8.  Value **11208704838** apabila di set menjadi hex akan menjadi 
+
