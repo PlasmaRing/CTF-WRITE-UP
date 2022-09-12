@@ -13,7 +13,7 @@ WEB : `https://picoctf.org/`
 | 6  | [speeds and feeds](#speeds-and-feeds) | 05/09/2022 | Reverse Engineering | picoCTF{num3r1cal_c0ntr0l_775375c7} | 50
 | 7  | [Shop](#shop) | 07/09/2022 | Reverse Engineering | picoCTF{b4d_brogrammer_3da34a8f} | 50
 | 8  | [ARMssembly 1](#armssembly-1) | 12/09/2022 | Reverse Engineering | picoCTF{000000e8} | 70
-| 9  | [ARMssembly 2](#armssembly-2) |  | Reverse Engineering | picoCTF{} | 90
+| 9  | [ARMssembly 2](#armssembly-2) | 12/09/2022 | Reverse Engineering | picoCTF{9c174346} | 90
 | 10  | [vault-door-1](#vault-door-1) | 08/09/2022 | Reverse Engineering | picoCTF{d35cr4mbl3_tH3_cH4r4cT3r5_f6daf4} | 100
 | 11  | [Hurry up! Wait!](#hurry-up-wait) | 08/09/2022 | Reverse Engineering | picoCTF{d15a5m_ftw_a82650a} | 100
 | 12  | [gogo](#gogo) | 08/09/2022 | Reverse Engineering | picoCTF{p1kap1ka_p1c09ad40dca} | 110 
@@ -322,5 +322,8 @@ Loops
 5.  Lalu lanjut ke **.L2**, disini akan di compare antara `[sp+28] & [sp+12]`, pada situasi ini `w1 < w0` **bcc .L3** in akan melakukan looping hingga `w1 >= w0`
 6.  Pada **.L3** akan dilakukan penambahan value sebagai berikut `[sp+24] +3` dan `[sp+28] +1`
 7.  Maka dapat disimpulkan bahwa untuk membuat `w1 >= w0` maka akan terjadi **3736234946 loop**, sesuai dengan **.L3**, `[sp+24] +3` maka hasil akhirnya `[sp+24] = 3 x 3736234946 = 11208704838`. Value ini menjadi return di **.L2**
-8.  Value **11208704838** apabila di set menjadi hex akan menjadi 
+8.  Value **11208704838** apabila di set menjadi hex akan menjadi `0x29C174346`, lalu rancang flagnya
+9.  FLAG DIPEROLEH
 
+**Flag**  
+`picoCTF{9c174346}`
