@@ -17,7 +17,9 @@ WEB : `https://picoctf.org/`
 | 10  | [vault-door-1](#vault-door-1) | 08/09/2022 | Reverse Engineering | picoCTF{d35cr4mbl3_tH3_cH4r4cT3r5_f6daf4} | 100
 | 11  | [Hurry up! Wait!](#hurry-up-wait) | 08/09/2022 | Reverse Engineering | picoCTF{d15a5m_ftw_a82650a} | 100
 | 12  | [gogo](#gogo) | 08/09/2022 | Reverse Engineering | picoCTF{p1kap1ka_p1c09ad40dca} | 110 
-| 13  | [not crypto](#not-crypto) | 09/09/2022 | Reverse Engineering | picoCTF{c0mp1l3r_0pt1m1z4t10n_15_pur3_w1z4rdry_but_n0_pr0bl3m?} | 150 
+| 13  | [ARMssembly 3](#armssembly-1) |  | Reverse Engineering |  | 130 
+| 14  | [Let's get dynamic](#lets-get-dynamic) |  | Reverse Engineering |  | 150 
+| 15  | [not crypto](#not-crypto) | 09/09/2022 | Reverse Engineering | picoCTF{c0mp1l3r_0pt1m1z4t10n_15_pur3_w1z4rdry_but_n0_pr0bl3m?} | 150 
 
 # Reverse Engineering 
 ## Transformation 
@@ -327,3 +329,13 @@ Loops
 
 **Flag**  
 `picoCTF{9c174346}`
+
+## ARMssembly 3
+
+**Description**  
+What integer does this program print with argument 1048110976? File: [chall_3.S](https://mercury.picoctf.net/static/580844a66feed02e8780aa97342dcdab/chall_3.S) Flag format: picoCTF{XXXXXXXX} -> (hex, lowercase, no 0x, and 32 bits. ex. 5614267 would be picoCTF{0055aabb})
+
+**Hints 1**  
+beep boop beep boop...
+
+**Solution [INA]**  
