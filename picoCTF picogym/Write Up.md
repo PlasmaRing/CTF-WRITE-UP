@@ -359,7 +359,7 @@ Running this in a debugger would be helpful
 5.  Ketik `break *0x0000555555555060` sesuai dengan **address memcmp**, lalu **run** dan input sembarang  
 ![image](https://user-images.githubusercontent.com/92077284/189841382-486c96ae-b8aa-44c7-93c9-07203453c0a6.png)
 ![image](https://user-images.githubusercontent.com/92077284/189841970-239f86c2-cc9c-4d26-9b78-81367f310d4e.png)
-6.  Disini karena programe melakukan *compare* antara `$rdi dan $rsi`, maka ketik `x/s $rsi`  
+6.  Disini karena program melakukan *compare* antara `$rdi dan $rsi`, maka ketik `x/s $rsi`  
 ![image](https://user-images.githubusercontent.com/92077284/189842193-98ab5aff-087c-4168-b0e2-8197e017146f.png)
 7.  FLAG DIPEROLEH
 
