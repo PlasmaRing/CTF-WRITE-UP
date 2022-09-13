@@ -339,3 +339,17 @@ What integer does this program print with argument 1048110976? File: [chall_3.S]
 beep boop beep boop...
 
 **Solution [INA]**  
+
+
+## Let's get dynamic
+
+**Description**  
+Can you tell what this file is reading? [chall.S](https://mercury.picoctf.net/static/6fcac66cfd4ac18de7374ee94e136f02/chall.S)
+
+**Hints 1**  
+Running this in a debugger would be helpful
+
+**Solution [INA]**  
+1.  Download file `chall.S` dan ubah ke **ELF** di terminal dengan command `gcc chall.S -o chall_let`
+3.  Analisa file `chall_let` dengan **gdb**, gunakan command `gdb chall_let` setelah masuk ke *directory file*
+4.  Ketik `i func` lalu ketik `break *1` untuk mengubah 
