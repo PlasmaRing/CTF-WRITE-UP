@@ -18,7 +18,7 @@ WEB : `https://picoctf.org/`
 | 11  | [Hurry up! Wait!](#hurry-up-wait) | 08/09/2022 | Reverse Engineering | picoCTF{d15a5m_ftw_a82650a} | 100
 | 12  | [gogo](#gogo) | 08/09/2022 | Reverse Engineering | picoCTF{p1kap1ka_p1c09ad40dca} | 110 
 | 13  | [ARMssembly 3](#armssembly-1) |  | Reverse Engineering |  | 130 
-| 14  | [Let's get dynamic](#lets-get-dynamic) |  | Reverse Engineering |  | 150 
+| 14  | [Let's get dynamic](#lets-get-dynamic) | 13/09/2022 | Reverse Engineering | picoCTF{dyn4m1c_4n4ly1s_1s_5up3r_us3ful_17e4690d} | 150 
 | 15  | [not crypto](#not-crypto) | 09/09/2022 | Reverse Engineering | picoCTF{c0mp1l3r_0pt1m1z4t10n_15_pur3_w1z4rdry_but_n0_pr0bl3m?} | 150 
 
 # Reverse Engineering 
@@ -351,5 +351,17 @@ Running this in a debugger would be helpful
 
 **Solution [INA]**  
 1.  Download file `chall.S` dan ubah ke **ELF** di terminal dengan command `gcc chall.S -o chall_let`
-3.  Analisa file `chall_let` dengan **gdb**, gunakan command `gdb chall_let` setelah masuk ke *directory file*
-4.  Ketik `i func` lalu ketik `break *1` untuk mengubah 
+2.  Analisa file `chall_let` dengan **gdb**, gunakan command `gdb chall_let` setelah masuk ke *directory file*
+3.  Ketik `i func` lalu ketik `break *1` *break asal untuk memperbaharui addressnya yang sudah ada base address* lalu run  
+![image](https://user-images.githubusercontent.com/92077284/189840556-5a698a4f-2b34-48a9-94ca-4466d4afbb10.png)
+4.  Ketik `delete 1` untuk menghapus breakpoint, lalu ketik `i func` kembali  
+![image](https://user-images.githubusercontent.com/92077284/189840856-63178c61-ef1e-4ae0-9063-ade68c854eaa.png)
+5.  Ketik `break *0x0000555555555060` sesuai dengan **address memcmp**, lalu **run** dan input sembarang  
+![image](https://user-images.githubusercontent.com/92077284/189841382-486c96ae-b8aa-44c7-93c9-07203453c0a6.png)
+![image](https://user-images.githubusercontent.com/92077284/189841970-239f86c2-cc9c-4d26-9b78-81367f310d4e.png)
+6.  Disini karena programe melakukan *compare* antara `$rdi dan $rsi`, maka ketik `x/s $rsi`  
+![image](https://user-images.githubusercontent.com/92077284/189842193-98ab5aff-087c-4168-b0e2-8197e017146f.png)
+7.  FLAG DIPEROLEH
+
+**Flag**  
+`picoCTF{dyn4m1c_4n4ly1s_1s_5up3r_us3ful_17e4690d}`
