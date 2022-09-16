@@ -20,6 +20,7 @@ WEB : `https://picoctf.org/`
 | 13  | [ARMssembly 3](#armssembly-1) |  | Reverse Engineering |  | 130 
 | 14  | [Let's get dynamic](#lets-get-dynamic) | 13/09/2022 | Reverse Engineering | picoCTF{dyn4m1c_4n4ly1s_1s_5up3r_us3ful_17e4690d} | 150 
 | 15  | [not crypto](#not-crypto) | 09/09/2022 | Reverse Engineering | picoCTF{c0mp1l3r_0pt1m1z4t10n_15_pur3_w1z4rdry_but_n0_pr0bl3m?} | 150 
+| 16 | [vault-door-3](#vault-door-3) | 17/09/2022 | Reverse Engineering | picoCTF{jU5t_a_s1mpl3_an4gr4m_4_u_c79a21} | 200
 
 # Reverse Engineering 
 ## Transformation 
@@ -330,7 +331,7 @@ Loops
 **Flag**  
 `picoCTF{9c174346}`
 
-## ARMssembly 3
+<!-- ## ARMssembly 3
 
 **Description**  
 What integer does this program print with argument 1048110976? File: [chall_3.S](https://mercury.picoctf.net/static/580844a66feed02e8780aa97342dcdab/chall_3.S) Flag format: picoCTF{XXXXXXXX} -> (hex, lowercase, no 0x, and 32 bits. ex. 5614267 would be picoCTF{0055aabb})
@@ -338,7 +339,7 @@ What integer does this program print with argument 1048110976? File: [chall_3.S]
 **Hints 1**  
 beep boop beep boop...
 
-**Solution [INA]**  
+**Solution [INA]**   -->
 
 
 ## Let's get dynamic
@@ -365,3 +366,24 @@ Running this in a debugger would be helpful
 
 **Flag**  
 `picoCTF{dyn4m1c_4n4ly1s_1s_5up3r_us3ful_17e4690d}`
+
+## vault-door-3
+
+**Description**  
+This vault uses for-loops and byte arrays. The source code for this vault is here: [VaultDoor3.java](https://jupiter.challenges.picoctf.org/static/a4018cec1446761cb2e8cce05db925fa/VaultDoor3.java)
+
+**Hints 1**  
+Make a table that contains each value of the loop variables and the corresponding buffer index that it writes to.
+
+**Solution [INA]**  
+1.  Download file `VaultDoor3.java` lalu buka dengan **vs code**
+2.  Terdapat bagian *flag checker* pada source code  
+![image](https://user-images.githubusercontent.com/92077284/190698757-7990562e-0129-499a-8864-80d4a4e44230.png)
+3.  Pada loop pertama dapat dirangkai password : `jU5t_a_s` mengambil 8 char pertama
+4.  Pada loop kedua dapat dirangkai password : `jU5t_a_s1mpl3_an` mengambil 8 char berikutnya namun dibalik urutannya
+5.  Pada loop ketiga dapat dirangkai password : `jU5t_a_s1mpl3_an4*r*m*4*u*c*9*2*` ambil 8 char dari belakang dengan jarak 2 char
+6.  Pada loop keempat dapat dirangkai password : `jU5t_a_s1mpl3_an4gr4m_4_u_c79a21` lengkapi sisa char sesuai urutan
+7.  FLAG DIPEROLEH
+
+**Flag**  
+`picoCTF{jU5t_a_s1mpl3_an4gr4m_4_u_c79a21}`
