@@ -4,9 +4,9 @@
 
 
 **Team: sudah dapet orang**  
-![image](https://user-images.githubusercontent.com/92077284/221419613-13c23b48-8c73-4a77-baaa-e48bf011095b.png)
+![image](https://user-images.githubusercontent.com/92077284/221420021-a32009da-de7e-4893-9e17-f604fe3fc847.png)
 
-**By: [Plasma](https://github.com/PlasmaRing) & [mitm](https://github.com/onixldlc)** & [mxlyk](https://github.com/swompsy)  
+**By: [Plasma](https://github.com/PlasmaRing) & [mitm](https://github.com/onixldlc) & [mxlyk](https://github.com/swompsy)**   
 
 **DATE: 02/25/2023 - 02/26/2023**  
 
@@ -50,6 +50,8 @@
 - Hey detective, can you help me  
 
 ---
+# Help  
 ![image](https://user-images.githubusercontent.com/92077284/221419977-a5e97429-55ed-4768-abed-5fa64ee62d0c.png)
+
 
 
