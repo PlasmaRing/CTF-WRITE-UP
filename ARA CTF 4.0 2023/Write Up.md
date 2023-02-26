@@ -32,7 +32,7 @@
 - L0v32x0r  
 - SH4-32  
 - babychall  
-- Help [SOLVED AFTER COMPETITION END]
+- Help *[SOLVED AFTER COMPETITION END]*
 
 **FORENSIC**
 - Thinker  
@@ -53,5 +53,8 @@
 # Help  
 ![image](https://user-images.githubusercontent.com/92077284/221419977-a5e97429-55ed-4768-abed-5fa64ee62d0c.png)
 
-
+Tahap pengerjaan:  
+1. s
+2. s
+3. s
 
