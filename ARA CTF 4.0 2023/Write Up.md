@@ -11,7 +11,7 @@
 **DATE: 02/25/2023 - 02/26/2023**  
 
 **WRITE UP LINK👇**  
-[LINK]()
+[LINK](https://github.com/PlasmaRing/CTF-WRITE-UP/blob/b34bf545aa12148e5e8ccbc4aacfd890aef50eec/ARA%20CTF%204.0%202023/FILE/WU_ARACTF_sudah%20dapet%20orang.pdf)
 
 ## Solved Probs
 
