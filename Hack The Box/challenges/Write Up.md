@@ -10,7 +10,7 @@ WEB : https://app.hackthebox.com/challenges/
 |----|---------------------|-------------------|----------------------|----------------------|----------------------|---------
 | 1  | [Wide](#wide) | 23/4/2023 | HTB{som3_str1ng5_4r3_w1d3} | 0 | RETIRED | VERY EASY |
 | 2  | [The Art of Reversing](#the-art-of-reversing) | 23/4/2023 | HTB{hacktheplanet365} | 0 | RETIRED | EASY |
-| 3  | [Tear Or Dear]{tear-or-dear} | 23/4/2023 | HTB{piph:roiw!@#} | 0 | RETIRED | EASY |
+| 3  | [Tear Or Dear](#tear-or-dear) | 23/4/2023 | HTB{piph:roiw!@#} | 0 | RETIRED | EASY |
 
 # Reversing
 ## Wide
