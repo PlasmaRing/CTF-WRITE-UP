@@ -64,7 +64,7 @@ Disini, saya amati bahwa jika diatas 1000, maka di hapus dan string di _concat_,
 ![image](https://user-images.githubusercontent.com/92077284/233841539-1dfe5c37-e867-47e1-a696-94d935e3564d.png)  
 Disini didapati bahwa output harus **wymddd**, maka string saya shift 1 menjadi **vxlccc**, lalu saya reverse menjadi **CCCLXV**, dimana bila diterjemahkan menjadi **365**  
 Tools : https://www.rapidtables.com/convert/number/roman-numerals-converter.html & https://www.dcode.fr/shift-cipher  
-4.  Setelah itu tinggal usernamenya, disini saya menggunakan cara manual, karena melihat bahwa sistem enkripsi sangatlah mudah, karena tidak ada algoritma random dan hanya diacak urutannya, seperti berikut saya memasukan **ABCDEFGHIJKLM**, didapati output **CBEFAMDLGHJIK**  
+4.  Setelah itu tinggal usernamenya, disini saya menggunakan cara manual, karena melihat bahwa sistem generatenya sangatlah mudah, karena tidak ada algoritma random dan hanya diacak urutannya, seperti berikut saya memasukan **ABCDEFGHIJKLM**, didapati output **CBEFAMDLGHJIK**  
 ![image](https://user-images.githubusercontent.com/92077284/233841151-b456b622-463f-471d-8879-dcd7c49c1dad.png)  
 Maka dengan menyusun urutannya didapati hasil sebagai berikut
 ```
