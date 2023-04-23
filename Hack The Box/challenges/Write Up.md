@@ -9,6 +9,7 @@ WEB : https://app.hackthebox.com/challenges/
 | No | Title               | Date              | Flag                 | Points               | Status               | Diff        
 |----|---------------------|-------------------|----------------------|----------------------|----------------------|---------
 | 1  | [Wide](#wide) | 23/4/2023 | HTB{som3_str1ng5_4r3_w1d3} | 0 | RETIRED | VERY EASY |
+| 2  | [The Art of Reversing](#the-art-of-reversing) | 23/4/2023 | HTB{hacktheplanet365} | 0 | RETIRED | EASY |
 
 # Reversing
 ## Wide
@@ -37,3 +38,37 @@ akhirnya saya langsung jump ke 0x555555400d93 , dimana lokasi ini seharusnya ter
 **Flag**  
 `HTB{som3_str1ng5_4r3_w1d3}`
 
+## The Art of Reversing
+
+**Description**  
+```
+This is a program that generates Product Keys for a specific Software Brand.
+
+The input is the client UserName and the Number of Days that the sofware will remain active on the client.
+The output is the product key that client will use to activate the software package.
+
+We just have the following product key 'cathhtkeepaln-wymddd'
+Could you find the corresponding Username say A and the number of activation days say B given as input?
+
+The flag you need to enter must follow this format: HTB{AB}
+```
+FILE : []()  
+
+**Solution [INA]**  
+1.  Download file yang diberikan, kebetulan disini berformat **.exe**, maka saya coba jalankan langsung di windows.  
+2.  Didapati sebuah generator kunci, dengan algoritma tertentu, disini memiliki ketentuan bahwa _activation days_ harus dalam interval **15-3650**
+![image](https://user-images.githubusercontent.com/92077284/233841225-d2a2f43b-8703-4ecc-ada2-7b7a49b939c4.png)  
+3.  Setelah itu saya coba menggunakan tools seperti **IDA** dan **JustDecompile**, disini saya dapati bahwa untuk _activation days_ di generate menggunakan angka romawi yang di reverse dan di shifting. Hal ini saya sadari dari hasil _decompile_ softwarenya.  
+![image](https://user-images.githubusercontent.com/92077284/233841375-232af077-64e8-46b5-bcc1-9742c07f0734.png)  
+Disini, saya amati bahwa jika diatas 1000, maka di hapus dan string di _concat_, jika diatas 500 maka di hapus dan string di _concat_, dan seterusnya, selain itu saya menganalisis bila saya memasukan angka **16 = jwy**, **17 = jjwy**. Hal ini sama dengan cara penulisan angka romawi hanya saja sedikit dienkrip    
+Disini didapati bahwa output harus **wymddd**, maka string saya shift 1 menjadi **vxlccc**, lalu saya reverse menjadi **CCCLXV**, dimana bila diterjemahkan menjadi **365**  
+Tools : https://www.rapidtables.com/convert/number/roman-numerals-converter.html & https://www.dcode.fr/shift-cipher
+
+![image](https://user-images.githubusercontent.com/92077284/233841539-1dfe5c37-e867-47e1-a696-94d935e3564d.png)
+
+
+![image](https://user-images.githubusercontent.com/92077284/233841151-b456b622-463f-471d-8879-dcd7c49c1dad.png)
+
+
+**Flag**  
+`HTB{hacktheplanet365}`
