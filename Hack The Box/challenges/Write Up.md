@@ -27,7 +27,9 @@ Setelah dilakukan beberapa kali percobaan, disini perlu dimasukan angka 1 dst un
 2.  Setelah mengetahui bahwa gile memerlukan input key, saya menggunakan tools **IDA**, untuk memeriksa file, dan disini saya menemukan adanya compare string pada fungsi **menu**  
 ![image](https://user-images.githubusercontent.com/92077284/233834414-e53b503d-9a12-4a51-88f0-b82922a9be00.png)
 3.  Disini saya mencoba untuk menemukan keynya menggunakan **strings** namun tidak ada, sehingga saya menggunakan **gdb** untuk memeriksa string yang dicompare  
-4.  Proses ini saya coba beberapa kali, namun saya tidak menemukan string asli yang dicompare *note : mungkin saya kurang teliti* akhirnya saya langsung jump ke 0x555555400d93 , dimana lokasi ini seharusnya terpanggil jika saya menginput key yang benar.  
+4.  Proses ini saya coba beberapa kali, namun saya tidak menemukan string asli yang dicompare  
+*note : mungkin saya kurang teliti*  
+akhirnya saya langsung jump ke 0x555555400d93 , dimana lokasi ini seharusnya terpanggil jika saya menginput key yang benar.  
 ![image](https://user-images.githubusercontent.com/92077284/233834854-0816d2bd-b90a-4e54-9af2-3d3c88a5a30d.png)
 
 5.  FLAG DIPEROLEH
