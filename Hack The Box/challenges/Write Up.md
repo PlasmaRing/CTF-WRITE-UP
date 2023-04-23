@@ -7,8 +7,8 @@ WEB : https://app.hackthebox.com/challenges/
 ``CATEGORY : REVERSING``
 
 | No | Title               | Date              | Flag                 | Points               | Status               | Diff        
-|----|---------------------|-------------------|----------------------|----------------------|----------------------| 
-| 1  | [Wide](#wide) | 23/4/2023 | HTB{som3_str1ng5_4r3_w1d3} | 0 | RETIRED | VERY EASY
+|----|---------------------|-------------------|----------------------|----------------------|----------------------|---------
+| 1  | [Wide](#wide) | 23/4/2023 | HTB{som3_str1ng5_4r3_w1d3} | 0 | RETIRED | VERY EASY |
 
 # Reversing
 ## Wide
