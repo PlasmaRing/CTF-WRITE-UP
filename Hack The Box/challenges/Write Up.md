@@ -108,8 +108,8 @@ Setelah melakukan debug, didapati beberapa data sebagai berikut
 ![image](https://user-images.githubusercontent.com/92077284/233892732-33112e0f-7a26-4a54-b8ea-aa812afe41b5.png)
 ![image](https://user-images.githubusercontent.com/92077284/233892793-71531339-b423-49a3-9246-92023c31448c.png)
 Disini bisa terlihat bahwa **o = "roiw!@#"** **aa = "piph"**, dan **this.username = "PASS"**,  
-a. karena **this.username == this.o** maka Passwordnya adalah **roiw!@#**  
-b. karena **this.check1(str) berujung pada (this.textBox_user.Text != this.aa)**, maka input user adalah **piph**  
+a. karena **this.username == this.o** maka Passwordnya adalah `roiw!@#`  
+b. karena **this.check1(str) berujung pada (this.textBox_user.Text != this.aa)**, maka input user adalah `piph`  
 ![image](https://user-images.githubusercontent.com/92077284/233893358-e7425fc0-d98b-48f5-9401-76ad95ea8f44.png)  
 
 4.  Masukan kedua data tersebut, dan FLAG DIPEROLEH
