@@ -90,7 +90,8 @@ Warning: It can produce false positives.
 FILE : []() 
 
 **Solution [INA]**  
-1.  
+1.  Pertama-tama download _chall_, disini file merupakan **.exe** sehingga saya coba jalankan dulu agar tahu jalan kerja program, disini diperlukan input username dan password, sehingga saya mencoba menganalisis menggunakan tools **IDA Pro** untuk melakukan analisa singkat, disini file menggunakan **.NET**, maka saya melanjutkan menggunakan tools **JustDecompile** dan **dnSpy 32 Bit**
+2.  Disini terdapat fungsi pemeriksa username dan password, jika benar maka akan melakukan print _Correct!_
 
 **Flag**  
 `HTB{piph:roiw!@#}`
