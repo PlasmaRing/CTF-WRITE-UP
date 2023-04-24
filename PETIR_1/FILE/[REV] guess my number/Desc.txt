@@ -1,4 +1,0 @@
-Desc: Guess my Number.exe in C++
-
-format: anjay{.*}
-
