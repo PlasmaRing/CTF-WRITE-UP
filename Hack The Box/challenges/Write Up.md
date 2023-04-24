@@ -11,6 +11,7 @@ WEB : https://app.hackthebox.com/challenges/
 | 1  | [Wide](#wide) | 23/4/2023 | HTB{som3_str1ng5_4r3_w1d3} | 0 | RETIRED | VERY EASY |
 | 2  | [The Art of Reversing](#the-art-of-reversing) | 23/4/2023 | HTB{hacktheplanet365} | 0 | RETIRED | EASY |
 | 3  | [Tear Or Dear](#tear-or-dear) | 23/4/2023 | HTB{piph:roiw!@#} | 0 | RETIRED | EASY |
+| 4  | [Find The Easy Pass](#find-the-easy-pass) | 24/4/2023 | HTB{fortran!} | 0 | RETIRED | EASY |
 
 # Reversing
 ## Wide
@@ -115,4 +116,12 @@ b. karena **this.check1(str) berujung pada (this.textBox_user.Text != this.aa)**
 4.  Masukan kedua data tersebut, dan FLAG DIPEROLEH
 
 **Flag**  
-`HTB{piph:roiw!@#}`
+`HTB{piph:roiw!@#}`  
+
+## Find The Easy Pass
+
+**Description**  
+```
+Find the password (say PASS) and enter the flag in the form HTB{PASS}
+```
+FILE : []()  
