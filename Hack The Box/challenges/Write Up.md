@@ -91,7 +91,28 @@ FILE : []()
 
 **Solution [INA]**  
 1.  Pertama-tama download _chall_, disini file merupakan **.exe** sehingga saya coba jalankan dulu agar tahu jalan kerja program, disini diperlukan input username dan password, sehingga saya mencoba menganalisis menggunakan tools **IDA Pro** untuk melakukan analisa singkat, disini file menggunakan **.NET**, maka saya melanjutkan menggunakan tools **JustDecompile** dan **dnSpy 32 Bit**
-2.  Disini terdapat fungsi pemeriksa username dan password, jika benar maka akan melakukan print _Correct!_
+![image](https://user-images.githubusercontent.com/92077284/233891745-4977ff6e-d78e-48a7-92b2-42ce3e9efab8.png)  
+
+2.  Disini terdapat fungsi pemeriksa username dan password, jika benar maka akan melakukan print _Correct!_  
+![image](https://user-images.githubusercontent.com/92077284/233891710-50d2611e-a670-4ff9-8cc1-c0c881682f92.png)  
+Setelah saya menganalisis, validasinya ada 2 : **this.username == this.o dan this.check1(str)**
+![image](https://user-images.githubusercontent.com/92077284/233891985-a59094eb-cc93-437a-b816-07bc30ad81ef.png)  
+dan bila dianalisa, check1 akan memanggil fungsi sampai berakhir pada **(this.textBox_user.Text != this.aa)**
+maka dari itu karena username dan password tidak bisa dilihat, maka saya melakukan debugging menggunakan **dnSpy**  
+3.  Saya menaruh _breakpoint_ ketika melakukan validasi password dan username,  
+![image](https://user-images.githubusercontent.com/92077284/233892295-f63ba2bf-5313-4cb9-9ced-89ab7f155611.png)  
+lalu saya memasukan password = PASS , dan username = USER  
+![image](https://user-images.githubusercontent.com/92077284/233892464-6c7ce927-f935-4613-9448-2c69b867dea8.png)  
+Setelah melakukan debug, didapati beberapa data sebagai berikut
+![image](https://user-images.githubusercontent.com/92077284/233892676-435d0d52-b8e1-4366-8204-cf351c9a87cf.png)
+![image](https://user-images.githubusercontent.com/92077284/233892732-33112e0f-7a26-4a54-b8ea-aa812afe41b5.png)
+![image](https://user-images.githubusercontent.com/92077284/233892793-71531339-b423-49a3-9246-92023c31448c.png)
+Disini bisa terlihat bahwa **o = "roiw!@#"** **aa = "piph"**, dan **this.username = "PASS"**,  
+a. karena **this.username == this.o** maka Passwordnya adalah **roiw!@#**
+b. karena **this.check1(str) berujung pada (this.textBox_user.Text != this.aa)**, maka input user adalah **piph**  
+![image](https://user-images.githubusercontent.com/92077284/233893358-e7425fc0-d98b-48f5-9401-76ad95ea8f44.png)  
+
+4.  Masukan kedua data tersebut, dan FLAG DIPEROLEH
 
 **Flag**  
 `HTB{piph:roiw!@#}`
