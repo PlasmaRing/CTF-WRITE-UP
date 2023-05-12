@@ -125,3 +125,21 @@ b. karena **this.check1(str) berujung pada (this.textBox_user.Text != this.aa)**
 Find the password (say PASS) and enter the flag in the form HTB{PASS}
 ```
 FILE : []()  
+
+**Solution [INA]**  
+1.  Pertama-tama download _chall_, disini file merupakan **.exe** sehingga saya coba jalankan dulu agar tahu jalan kerja program, disini diperlukan input password  
+![image](https://github.com/PlasmaRing/CTF-WRITE-UP/assets/92077284/2ccf1bf4-df6e-4f7d-8932-40965dbdd617)  
+
+2.  Karena file ini **.exe** maka saya coba lakukan static analysis menggunakan tools **IDA**, disini saya mencoba masuk kebagian **Button1Click** karena disini kita perlu melakukan klik submit untuk memeriksa _password_  
+![image](https://github.com/PlasmaRing/CTF-WRITE-UP/assets/92077284/cbb75642-11ed-4ec1-b07b-bc11553e26c3)  
+Pada bagian ini saya menganalisis bahwa input string berjumlah **8** karena disini dia membaca setiap _character_ lalu di gabungkan
+![image](https://github.com/PlasmaRing/CTF-WRITE-UP/assets/92077284/896192bd-099f-4015-a411-719e098546ae)  
+dan bila password benar maka akan melakukan output **Congrats**  
+![image](https://github.com/PlasmaRing/CTF-WRITE-UP/assets/92077284/f6a76e95-0ea6-4549-816a-16ab916b9300)
+Setelah saya coba cek, ternyata setiap charnya tersimpan dan dapat disusun menjadi `fortran!`  
+
+3.  Saya coba masukan _password_ dengan input `fortran!` dan FLAG DIPEROLEH  
+![image](https://github.com/PlasmaRing/CTF-WRITE-UP/assets/92077284/44812b15-7693-4790-9abc-5f26eebfde9f)  
+
+**Flag**  
+`HTB{fortran!}`  
