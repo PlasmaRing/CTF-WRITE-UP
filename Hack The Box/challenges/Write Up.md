@@ -135,7 +135,7 @@ FILE : []()
 Pada bagian ini saya menganalisis bahwa input string berjumlah **8** karena disini dia membaca setiap _character_ lalu di gabungkan
 ![image](https://github.com/PlasmaRing/CTF-WRITE-UP/assets/92077284/896192bd-099f-4015-a411-719e098546ae)  
 dan bila password benar maka akan melakukan output **Congrats**  
-![image](https://github.com/PlasmaRing/CTF-WRITE-UP/assets/92077284/f6a76e95-0ea6-4549-816a-16ab916b9300)
+![image](https://github.com/PlasmaRing/CTF-WRITE-UP/assets/92077284/f6a76e95-0ea6-4549-816a-16ab916b9300)  
 Setelah saya coba cek, ternyata setiap charnya tersimpan dan dapat disusun menjadi `fortran!`  
 
 3.  Saya coba masukan _password_ dengan input `fortran!` dan FLAG DIPEROLEH  
