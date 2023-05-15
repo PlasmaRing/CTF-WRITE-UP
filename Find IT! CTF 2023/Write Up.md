@@ -14,58 +14,62 @@
 ## Warm Up Challenges
 
 **REVERSE ENGINEERING**
--  Vidner's Rhapsody  
+- Buzzer  
+- PindahKuy  
 
 **CRYPTOGRAPHY**
-- One Time Password (?)  
-- Secrets Behind a Letter  
-- L0v32x0r  
-- SH4-32  
-- babychall  
-- Help *[SOLVED AFTER COMPETITION END]*
+- ASCII-PI  
+- BanyakPrima  
+- EzRSA  
 
 **FORENSIC**
-- Thinker  
+- Citra  
+- Morse  
 
 **OTHERS**
-- in-sanity check  
-- @B4SH  
-- D0ts N D4sh3s  
-- Truth  
-- Feedback    
+- MagicEquation    
 
 **OSINT**
-- Time Machine  
-- Backroom  
-- Hey detective, can you help me  
+- Dimana  
+- WhereIsIt  
 
+---
 ## Qualification Challenges
 
 **REVERSE ENGINEERING**
--  Vidner's Rhapsody  
+- Furr(y)verse  
+- Bypass the Py  
+- Joy Sketching in the Matrix  
+- Top-Level-Security  
 
 **CRYPTOGRAPHY**
-- One Time Password (?)  
-- Secrets Behind a Letter  
-- L0v32x0r  
-- SH4-32  
-- babychall  
-- Help *[SOLVED AFTER COMPETITION END]*
+- Detective Handal  
+- Choo-Choo  
+- Confusing Encryption  
+- CRYptograPI  
+- I Like Matrix  
+- One Of Us  
+- Random is not Random  
+- Randomized Seed  
 
 **FORENSIC**
-- Thinker  
+- Been There Done That  
+- Date Night  
+- Enhanced  
+- Me(me)tadata  
+- The Spectre  
 
 **OTHERS**
-- in-sanity check  
-- @B4SH  
-- D0ts N D4sh3s  
-- Truth  
-- Feedback    
+- Discovered  
+- Mental Health Check  
+- NCS Cipher  
 
 **OSINT**
-- Time Machine  
-- Backroom  
-- Hey detective, can you help me  
+- Back In My Day  
+- Mixtape  
+- Know Your Worth  
+- Lost
+- Twitch Frogs
 
 ---
 # Help  
