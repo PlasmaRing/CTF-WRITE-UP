@@ -63,7 +63,7 @@
 
 **OSINT**
 - [Back In My Day](#back-in-my-day)  
-- Mixtape  
+- [Mixtape](#mixtape)  
 - Know Your Worth  
 - [Lost](#lost)
 - Twitch Frogs
@@ -610,13 +610,22 @@ WEB = https://viewdns.info/iphistory/?domain=ugm.ac.id
 
 ## Mixtape  
 **Description**   
-
+![image](https://github.com/PlasmaRing/CTF-WRITE-UP/assets/92077284/16a81e0a-df32-4224-8140-7652c7ea91dc)  
 
 **Solution [INA]**  
-1.
+1. Disini saya mengakses https://open.spotify.com/user/31xz343hzapehdt4kvwwnlrh2qru sesuai dengan instruksi soal  
+2. Sebagai langkah awal saya coba untuk mencari website yang bisa menampilkan riwayat lagu yang sering didengar namun hanya menggunakan _user link_, namun saya tidak menemukannya, selanjutnya saya coba mengakses album-albumnya dan akhirnya saya menemukan petunjuk pada deskripsi album  
+![image](https://github.com/PlasmaRing/CTF-WRITE-UP/assets/92077284/2f696afa-44b7-4f95-bd5c-a00ecb55101c)  
+Pada album ini, pengguna mengatakan bahwa ini adalah list lagu pada tahun **2019**  
+3. Karena disini ada 12 lagu, saya asumsikan bahwa lagu **kelima** merupakan lagu yang pengguna dengar pada bulan **Mei**, hal ini didukung juga dari salah satu deskripsi album yang mengatakan _Changed monthly_  
+![image](https://github.com/PlasmaRing/CTF-WRITE-UP/assets/92077284/ce93c018-8ae4-47da-95ec-a521e39f5566)  
+4. Lagu kelimanya adalah sebagai berikut  
+![image](https://github.com/PlasmaRing/CTF-WRITE-UP/assets/92077284/15e4e175-705e-43aa-a3ca-fa51a6cd428d)
+5. Setelah itu rancang flag sesuai intruksi soal `ILLENIUM_Good_Things_Fall_Apart`  
+6. FLAG DIPEROLEH  
 
 **Flag**  
-`FLAG`  
+`FindITCTF{ILLENIUM_Good_Things_Fall_Apart}`  
 
 ## Know Your Worth  
 **Description**   
