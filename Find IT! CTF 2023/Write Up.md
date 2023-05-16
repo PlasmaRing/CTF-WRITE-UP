@@ -6,10 +6,7 @@
 
 **By: [Plasma](https://github.com/PlasmaRing)**
 
-**DATE: 02/25/2023 - 02/26/2023**  
-
-**WRITE UP LINK👇**  
-[LINK](https://github.com/PlasmaRing/CTF-WRITE-UP/blob/b34bf545aa12148e5e8ccbc4aacfd890aef50eec/ARA%20CTF%204.0%202023/FILE/WU_ARACTF_sudah%20dapet%20orang.pdf)
+**DATE: 05/13/2023 - 05/14/2023**  
 
 ## Warm Up Challenges
 
@@ -50,7 +47,7 @@
 - I Like Matrix  
 - One Of Us  
 - Random is not Random  
-- Randomized Seed  
+- [Randomized Seed](#randomized-seed)  
 
 **FORENSIC**
 - Been There Done That  
@@ -435,13 +432,58 @@ Notes: disini ditemukan `key = 7` dari hasil percobaan, saya mencoba untuk menda
 
 ## Randomized Seed  
 **Description**   
-
+![image](https://github.com/PlasmaRing/CTF-WRITE-UP/assets/92077284/0765ffa4-0ee9-455e-9053-cf31232f34d3)  
 
 **Solution [INA]**  
-1.
+1. Pertama download file soal, disini didapati ada 2 file yaitu **.py** sebagai sistem enkripnya, dan **.txt** untuk outputnya  
+Berikut file enkripsinya dalam bentuk **py**  
+```py
+import random
+from Cryptodome.Util.number import getPrime
+
+with open('flag.txt', 'r') as f:
+    flag = f.read()
+
+randSeed = getPrime(13)
+random.seed(randSeed)
+
+encrypted = ''.join(f'{(ord(i) ^ random.randint(0, 255)):02x}' for i in flag)
+
+with open('out.txt', 'w') as f:
+    f.write(encrypted)
+```
+Untuk Outputnya adalah  
+```
+6046dde5dabf9a1f0216c13db91bd5502ea58ed82277058e4fb86c687ba6
+```
+2. Dari hasil analisis saya, disini formatnya dikirim dalam bentuk hex, dan setiap char dalam flagnya akan di random namun menggunaakn sistem **seed**, jadi selagi kita menemukan seednya, maka flag dapat di _decrypt_ 
+3. Disini saya membuat solver sebagai berikut  
+```py
+import random
+
+encrypted_flag = '6046dde5dabf9a1f0216c13db91bd5502ea58ed82277058e4fb86c687ba6'
+
+for seed in range(1000, 10000):
+    random.seed(seed)
+    
+    flag = ''
+    for i in range(0, len(encrypted_flag), 2):
+        hex_pair = encrypted_flag[i:i+2]
+        decimal_value = int(hex_pair, 16) ^ random.randint(0, 255)
+        flag += chr(decimal_value)
+    
+    print(f"Seed: {seed}, Flag: {flag}")
+    
+    if "Find" in flag:
+        break
+```
+Note: disini saya membuat range 1000 sampai 10000 karena setelah saya periksa seednya selalu 4 digit, dan pada line terakhir saya akan _break_ jika menemukan kata "Find", dimana "Find" merupakan format awal flag
+4. Setelah itu saya jalankan solver, dan solver mulai melakukan _bruteforce_, flag ditemukan pada `seed = 8059`  
+![image](https://github.com/PlasmaRing/CTF-WRITE-UP/assets/92077284/12019148-2966-4dd7-89a3-918e68fea2a3)  
+5. FLAG DIPEROLEH  
 
 **Flag**  
-`FLAG`  
+`FindITCTF{2_Ez_t0_Br3ak_27431}`  
 
 ## Been There Done That  
 **Description**   
