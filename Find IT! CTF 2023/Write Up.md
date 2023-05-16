@@ -560,8 +560,10 @@ $pdf$4*4*128*-1060*1*16*fce8559bd3fcc84ba72dbad5638fcc20*32*c71748896b9831a45b01
 Didapatilah password pdf yaitu **LimitedEdition**
 5. Buka PDF menggunakan password yang sudah didapat  
 ![image](https://github.com/PlasmaRing/CTF-WRITE-UP/assets/92077284/0be58abc-8de0-4d91-9c26-79ba1ab6061c)
-6. Disini ternyata flag ternyata dikemas dalam bentuk EMOJI, disini saya coba mencari cara untuk mendekripnya, dan ternyata emoji ini menggunakan huruf depan dari nama emoji, sebagai contoh `Oldman = o` atau `Money-Mouth Face = m` dan seterusnya, Sumber = https://emojipedia.org/  
+6. Disini ternyata flag ternyata dikemas dalam bentuk EMOJI, disini saya coba mencari cara untuk mendekripnya, dan ternyata emoji ini menggunakan huruf depan dari nama emoji, sebagai contoh `Oldman = o` atau `Money-Mouth Face = m` dan seterusnya,   
+Sumber = https://emojipedia.org/  
 7. Setelah disusun didapati hasil `not_an_emot_cipher_only_need_to_find_the_pattern`  
+8. FLAG DIPEROLEH  
 
 **Flag**  
 `FindITCTF{not_an_emot_cipher_only_need_to_find_the_pattern}`  
