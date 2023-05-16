@@ -65,7 +65,7 @@
 - [Back In My Day](#back-in-my-day)  
 - Mixtape  
 - Know Your Worth  
-- Lost
+- Lost(#lost)
 - Twitch Frogs
 
 ---
@@ -613,13 +613,22 @@ WEB = https://viewdns.info/iphistory/?domain=ugm.ac.id
 
 ## Lost
 **Description**   
-
+![image](https://github.com/PlasmaRing/CTF-WRITE-UP/assets/92077284/d6f8aab4-e231-43af-9f52-82361a05d43a)  
 
 **Solution [INA]**  
-1.
+1. Sesuai dengan keterangan soal, saya menggunakan **WayBack Machine** untuk mencari laman website find-it.id pada akhir bulan maret  
+Tools : http://web.archive.org/web
+![image](https://github.com/PlasmaRing/CTF-WRITE-UP/assets/92077284/c63c2f3c-7453-4e61-a5c9-08c7d5d3aec8)  
+2. Disini saya coba menganalisis website http://web.archive.org/web/20230328143914/https://www.find-it.id/ dan membandingkannya website pada tanggal lainnya.
+![image](https://github.com/PlasmaRing/CTF-WRITE-UP/assets/92077284/03c81cf3-d8a6-4500-8699-015111c33803)  
+Disini saya temukan bagian `/mongo-secret.js` pada bagian _inspect element_, maka dari itu saya coba akses http://web.archive.org/web/20230328143914/https://www.find-it.id/mongo-secret.js
+![image](https://github.com/PlasmaRing/CTF-WRITE-UP/assets/92077284/28cd4073-ff2e-44e7-9fae-54b252bb048c)  
+3. Lalu ditemukan sebuah string yang terenkripsi = `ZDFnaXQ0bF9mMDB0cHIxbnRfaTVfczBfdTUzZnUxX3IxZ2h0Pw==`, lalu disini saya coba dekrip menggunakan **CyberChef**  
+![image](https://github.com/PlasmaRing/CTF-WRITE-UP/assets/92077284/6be364f3-a8fb-4697-a4b7-376d4add897b)  
+4. FLAG DIPEROLEH  
 
 **Flag**  
-`FLAG`  
+`FindITCTF{d1git4l_f00tpr1nt_i5_s0_u53fu1_r1ght?}`  
 
 ## Twitch Frogs**Description**   
 
