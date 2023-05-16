@@ -376,6 +376,7 @@ int main()
 }
 ```
 Notes: disini ditemukan `key = 7` dari hasil percobaan, saya mencoba untuk mendapatkan format `FindITCTF{*}` dengan mencoba enkrip satu persatu dan mencocokannya dengan output  
+
 4. FLAG DIPEROLEH  
 
 **Flag**  
