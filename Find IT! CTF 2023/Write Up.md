@@ -72,6 +72,47 @@
 - Twitch Frogs
 
 ---
-# Buzzer
+## Buzzer
+## PindahKuy  
 
-**FLAG : **
+## ASCII-PI  
+## BanyakPrima  
+## EzRSA  
+
+## Citra  
+## Morse  
+
+## MagicEquation    
+
+## Dimana  
+## WhereIsIt  
+
+## Furr(y)verse  
+## Bypass the Py  
+## Joy Sketching in the Matrix  
+## Top-Level-Security  
+
+## Detective Handal  
+## Choo-Choo  
+## Confusing Encryption  
+## CRYptograPI  
+## I Like Matrix  
+## One Of Us  
+## Random is not Random  
+## Randomized Seed  
+
+## Been There Done That  
+## Date Night  
+## Enhanced  
+## Me(me)tadata  
+## The Spectre  
+
+## Discovered  
+## Mental Health Check  
+## NCS Cipher  
+
+## Back In My Day  
+## Mixtape  
+## Know Your Worth  
+## Lost
+## Twitch Frogs
