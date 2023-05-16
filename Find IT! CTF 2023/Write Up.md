@@ -61,7 +61,7 @@
 
 **OTHERS**
 - Discovered  
-- Mental Health Check  
+- [Mental Health Check](#mental-health-checK)  
 - NCS Cipher  
 
 **OSINT**
@@ -364,10 +364,15 @@
 
 
 **Solution [INA]**  
-1.
+1. Pertama download filenya, kebetulan disini memiliki ekstensi **.exe**, maka dari itu saya coba untuk melakukan _static analysis_ menggunakan **IDA**  
+![image](https://github.com/PlasmaRing/CTF-WRITE-UP/assets/92077284/a02a8426-e106-4079-8c92-55154331641c)  
+![image](https://github.com/PlasmaRing/CTF-WRITE-UP/assets/92077284/0ba2f4a9-e952-4779-93d2-83dce99c9975)  
+
+2. Disini langsung ditemukan flagnya, namun kita juga bisa menemukan flagnya menggunakan `strings` pada KALI LINUX  
+![image](https://github.com/PlasmaRing/CTF-WRITE-UP/assets/92077284/31f905ca-1a4c-4dca-a82a-106b51f30287)
 
 **Flag**  
-`FLAG`  
+`FindITCTF{everyone_asks_who_are_you_but_not_how_are_you}`  
 
 ## NCS Cipher  
 **Description**   
