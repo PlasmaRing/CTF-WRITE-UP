@@ -238,10 +238,148 @@ Dan setelah saya jalankan dan memasukan input apapun, disini ternyata sudah terl
 ![image](https://github.com/PlasmaRing/CTF-WRITE-UP/assets/92077284/8658a2a0-0c7a-408e-9096-233108340782)  
 
 **Solution [INA]**  
-1. Pertama disini saya download file-file soal, disini didapati 
+1. Pertama disini saya download file-file soal, disini didapati ada 2 file. File pertama adalah **.cpp** sebagai sistem enkrip, dan **.txt** sebagai outputnya
+File **cpp**nya adalah sebagai berikut
+```cpp
+#include<iostream>
+#include<string>
+#include<vector>
+
+using namespace std;
+
+string flag = "[REDACTED]";
+#define KEY [REDACTED]
+
+string encrypt(string text, int key)
+{
+    char a[key][(text.length())];
+ 
+    for (int i=0; i < key; i++)
+        for (int j = 0; j < text.length(); j++)
+            a[i][j] = '\n';
+ 
+    bool dir_down = false;
+    int x = 0, y = 0;
+ 
+    for (int i=0; i < text.length(); i++)
+    {
+        if (x == 0 || x == key-1)
+            dir_down = !dir_down;
+ 
+        a[x][y++] = text[i];
+ 
+        dir_down?x++ : x--;
+    }
+ 
+    string result;
+    for (int i=0; i < key; i++)
+        for (int j=0; j < text.length(); j++)
+            if (a[i][j]!='\n')
+                result.push_back(a[i][j]);
+ 
+    return result;
+}
+ 
+int main()
+{
+    string text = flag;
+    int key = KEY;
+    string cipher = encrypt(text, key);
+    cout << cipher << endl;
+    return 0;
+}
+```
+dan Outputnya
+```
+F1_i4L31nrFdsd{30_IFNCE}TTc_4yC3s
+```
+2. Cara pertama untuk melakukan dekripnya adalah dengan menggunakan **online tools** untuk _decrypt_ **railfence cipher**, disini saya memikirkan sistem enkripsi ini dari _output_ dan dari judul soal yang merujuk pada "kereta", ditambah lagi dengan nama file txt `notes_from_thomas.txt` yang juga memperkuat dugaan menggunakan **railfence cipher**  . Disini saya menggunakan https://www.boxentriq.com/code-breaking/rail-fence-cipher  
+![image](https://github.com/PlasmaRing/CTF-WRITE-UP/assets/92077284/fcd7a63e-6a2e-426d-aafd-aa6937af5ab6)
+Disini tinggal dicoba beberapa percobaan, dan ditemukan flagnya dengan `Rails = 7`  
+
+3. Opsi selain menggunakan _online tools_ adalah dengan membuat **solver**, berikut solvernya
+```cpp
+#include<iostream>
+#include<string>
+#include<vector>
+
+using namespace std;
+
+string decrypt(string encryptedText, int key)
+{
+    char a[key][encryptedText.length()];
+ 
+    for (int i = 0; i < key; i++)
+    {
+        for (int j = 0; j < encryptedText.length(); j++)
+        {
+            a[i][j] = '\n';
+        }
+    }
+ 
+    bool dir_down = false;
+    int x = 0, y = 0;
+ 
+    for (int i = 0; i < encryptedText.length(); i++)
+    {
+        if (x == 0 || x == key - 1)
+        {
+            dir_down = !dir_down;
+        }
+ 
+        a[x][y++] = '*';
+ 
+        dir_down ? x++ : x--;
+    }
+ 
+    int index = 0;
+    for (int i = 0; i < key; i++)
+    {
+        for (int j = 0; j < encryptedText.length(); j++)
+        {
+            if (a[i][j] == '*' && index < encryptedText.length())
+            {
+                a[i][j] = encryptedText[index++];
+            }
+        }
+    }
+ 
+    string result;
+    dir_down = false;
+    x = 0, y = 0;
+ 
+    for (int i = 0; i < encryptedText.length(); i++)
+    {
+        if (x == 0 || x == key - 1)
+        {
+            dir_down = !dir_down;
+        }
+ 
+        if (a[x][y] != '*')
+        {
+            result.push_back(a[x][y++]);
+        }
+ 
+        dir_down ? x++ : x--;
+    }
+ 
+    return result;
+}
+
+int main()
+{
+    string yangmaudidec = "F1_i4L31nrFdsd{30_IFNCE}TTc_4yC3s";
+    int key = 7;
+    string result = decrypt(yangmaudidec, key);
+    cout << result << endl;
+    return 0;
+}
+```
+Notes: disini ditemukan `key = 7` dari hasil percobaan, saya mencoba untuk mendapatkan format `FindITCTF{*}` dengan mencoba enkrip satu persatu dan mencocokannya dengan output  
+4. FLAG DIPEROLEH  
 
 **Flag**  
-`FLAG`  
+`FindITCTF{r41LF3Nc3_C0d3_1s_E4sy}`  
 
 ## Confusing Encryption  
 **Description**   
