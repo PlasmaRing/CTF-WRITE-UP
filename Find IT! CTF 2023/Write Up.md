@@ -65,7 +65,7 @@
 - NCS Cipher  
 
 **OSINT**
-- Back In My Day  
+- [Back In My Day](#back-in-my-day)  
 - Mixtape  
 - Know Your Worth  
 - Lost
@@ -396,13 +396,18 @@ Dan setelah saya jalankan dan memasukan input apapun, disini ternyata sudah terl
 
 ## Back In My Day  
 **Description**   
-
+![image](https://github.com/PlasmaRing/CTF-WRITE-UP/assets/92077284/d08461b0-b834-4aaf-a6cc-2b26b9239406)  
 
 **Solution [INA]**  
-1.
+1. Pertama disini saya coba mencari website yang mencatat riwayat IP Address pada sebuah website, awalnya saya mencoba menggunakan **WayBackMachine**, namun saya tidak menemukan record IPnya  
+2. kemudian saya mencoba mencari lagi dan menemukan website https://viewdns.info/iphistory, lalu saya mencoba memasukan website `ugm.ac.id`  
+![image](https://github.com/PlasmaRing/CTF-WRITE-UP/assets/92077284/80d06039-dc98-4afc-a0e3-e11378c7ebae)  
+WEB = https://viewdns.info/iphistory/?domain=ugm.ac.id  
+3. Pada rentang waktu sesuai soal (2017-05-26 - 2017-09-03), maka IPnya adalah `175.111.88.11`, selanjutnya tinggal dikemas dalam format flag  
+4. FLAG DITEMUKAN
 
 **Flag**  
-`FLAG`  
+`FindITCTF{175.111.88.11}`  
 
 ## Mixtape  
 **Description**   
