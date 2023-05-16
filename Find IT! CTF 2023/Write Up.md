@@ -325,15 +325,15 @@
 
 ## Me(me)tadata  
 **Description**   
-![image](https://github.com/PlasmaRing/CTF-WRITE-UP/assets/92077284/f8e54f31-8491-4bf9-814e-d687e32b5008)
+![image](https://github.com/PlasmaRing/CTF-WRITE-UP/assets/92077284/f8e54f31-8491-4bf9-814e-d687e32b5008)  
 
 **Solution [INA]**  
-1. Download file, file tersebut adalah file gambar berformat **.jpg**
-2. Karena disini membahas soal metadata maka saya melihat _properties_ pada gambar
+1. Download file, file tersebut adalah file gambar berformat **.jpg**  
+2. Karena disini membahas soal metadata maka saya melihat _properties_ pada gambar  
 ![image](https://github.com/PlasmaRing/CTF-WRITE-UP/assets/92077284/5a21b5b4-cd89-493d-beda-a83cecc1f725)  
 3. Disini ditemukan sebuah string `NDYgNjkgNkUgNjQgNDkgNTQgNDMgNTQgNDYgN0IgNzAgMzQgNEIgMzMgNUYgNkUgNDEgNkUgNzkgMzQgNUYgMzUgMzcgMzIgMzkgMzEgN0Q=;` dan saya gunakan tools seperti **CyberChef** untuk mendekripnya  
 ![image](https://github.com/PlasmaRing/CTF-WRITE-UP/assets/92077284/6ec2aaa9-3a2f-4313-8ee6-a0774b4c1961)  
-4. FLAG DIPEROLEH
+4. FLAG DIPEROLEH  
 
 **Flag**  
 `FindITCTF{p4K3_nAny4_57291}`  
