@@ -57,7 +57,7 @@
 - The Spectre  
 
 **OTHERS**
-- Discovered  
+- [Discovered](#discovered)  
 - [Mental Health Check](#mental-health-checK)  
 - NCS Cipher  
 
@@ -543,13 +543,28 @@ Note: disini saya membuat range 1000 sampai 10000 karena setelah saya periksa se
 
 ## Discovered  
 **Description**   
-
+![image](https://github.com/PlasmaRing/CTF-WRITE-UP/assets/92077284/b321a03a-6603-41c9-9545-b8fd6ab576e2)  
 
 **Solution [INA]**  
-1.
+1. Pertama disini saya download soalnya dan didapati file dalam bentuk **PDF**, namun file tersebut terkunci  
+2. Disini saya mencoba untuk melakukan _bruteforce password_ dengan bantuan **tools** seperti **pdf2john** dan **hashcat**  
+3. Saya menggunakan **pdf2john** untuk mendapatkan string yang nantinya akan di _bruteforce_  
+![image](https://github.com/PlasmaRing/CTF-WRITE-UP/assets/92077284/92537d90-8c6a-4c7a-8c57-742f26bea367)  
+Disini didapati stringnya sebagai berikut  
+```
+$pdf$4*4*128*-1060*1*16*fce8559bd3fcc84ba72dbad5638fcc20*32*c71748896b9831a45b01a477b9970c98000000000000000000000000000000*32*167b0cd8e21bbd37be65e1df44df6a7043f29c342635c1754fa81bc7fc029f
+```
+4. Berikutnya saya menggunakan **hashcat** untuk melakukan proses _password bruteforce_  
+![image](https://github.com/PlasmaRing/CTF-WRITE-UP/assets/92077284/54f234c0-2029-497c-8d7d-7e96ddc5a326)  
+![image](https://github.com/PlasmaRing/CTF-WRITE-UP/assets/92077284/6d10d753-031b-4dba-8c0d-5ed06bff0804)  
+Didapatilah password pdf yaitu **LimitedEdition**
+5. Buka PDF menggunakan password yang sudah didapat  
+![image](https://github.com/PlasmaRing/CTF-WRITE-UP/assets/92077284/0be58abc-8de0-4d91-9c26-79ba1ab6061c)
+6. Disini ternyata flag ternyata dikemas dalam bentuk EMOJI, disini saya coba mencari cara untuk mendekripnya, dan ternyata emoji ini menggunakan huruf depan dari nama emoji, sebagai contoh `Oldman = o` atau `Money-Mouth Face = m` dan seterusnya, Sumber = https://emojipedia.org/  
+7. Setelah disusun didapati hasil `not_an_emot_cipher_only_need_to_find_the_pattern`  
 
 **Flag**  
-`FLAG`  
+`FindITCTF{not_an_emot_cipher_only_need_to_find_the_pattern}`  
 
 ## Mental Health Check  
 **Description**   
@@ -630,7 +645,8 @@ Disini saya temukan bagian `/mongo-secret.js` pada bagian _inspect element_, mak
 **Flag**  
 `FindITCTF{d1git4l_f00tpr1nt_i5_s0_u53fu1_r1ght?}`  
 
-## Twitch Frogs**Description**   
+## Twitch Frogs
+**Description**   
 
 
 **Solution [INA]**  
