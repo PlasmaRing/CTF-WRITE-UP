@@ -44,7 +44,7 @@
 
 **CRYPTOGRAPHY**
 - Detective Handal  
-- Choo-Choo  
+- [Choo-Choo](#choo-choo)  
 - Confusing Encryption  
 - CRYptograPI  
 - I Like Matrix  
@@ -235,10 +235,10 @@ Dan setelah saya jalankan dan memasukan input apapun, disini ternyata sudah terl
 
 ## Choo-Choo  
 **Description**   
-
+![image](https://github.com/PlasmaRing/CTF-WRITE-UP/assets/92077284/8658a2a0-0c7a-408e-9096-233108340782)  
 
 **Solution [INA]**  
-1.
+1. Pertama disini saya download file-file soal, disini didapati 
 
 **Flag**  
 `FLAG`  
