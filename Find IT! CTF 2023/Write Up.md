@@ -37,7 +37,7 @@
 ## Qualification Challenges
 
 **REVERSE ENGINEERING**
-- Furr(y)verse  
+- [Furr(y)verse](#furryverse)  
 - Bypass the Py  
 - Joy Sketching in the Matrix  
 - Top-Level-Security  
@@ -175,13 +175,23 @@
 
 ## Furr(y)verse  
 **Description**   
-
+![image](https://github.com/PlasmaRing/CTF-WRITE-UP/assets/92077284/c94eac52-979b-4a95-b60b-95284e44b80b)  
 
 **Solution [INA]**  
-1.
+1. Pertama download filenya, lalu disini didapati filenya merupakan **ELF**, disini saya lakukan dulu _static analysis_ menggunakan **IDA**  
+![image](https://github.com/PlasmaRing/CTF-WRITE-UP/assets/92077284/c1045e24-af60-47f3-bea2-ff92d6beedcf)  
+Disini setelah saya analisis, saya mendapati bahwa terdapat sistem enkripsi sederhana, seperti dapat terlihat terdapat fungsi **EncodeKey**  
+2. Karena flag tidak bisa dilihat secara terang-terangan, saya coba untuk melakukan _dinamic analysis_ menggunakan **GDB** pada linux  
+![image](https://github.com/PlasmaRing/CTF-WRITE-UP/assets/92077284/57da75dd-e2e2-49a2-8729-849185d09fa8)  
+Gambaran jika file dijalankan  
+![image](https://github.com/PlasmaRing/CTF-WRITE-UP/assets/92077284/b4100590-c81a-410e-8cac-46555d1f37bf)  
+Disini saya melakukan _breakpoint_ pada alamat tersebut, karena ada fungsi **cmp**  
+![image](https://github.com/PlasmaRing/CTF-WRITE-UP/assets/92077284/5884d6dc-bc72-4e90-b71a-822142ac7d4f)  
+Dan setelah saya jalankan dan memasukan input apapun, disini ternyata sudah terlihat flagnya.
+3. FLAG DIPEROLEH  
 
 **Flag**  
-`FLAG`  
+`FindITCTF{s0l1d_50L1d_5Ol1D}`  
 
 ## Bypass the Py  
 **Description**   
@@ -361,13 +371,12 @@
 
 ## Mental Health Check  
 **Description**   
-
+![image](https://github.com/PlasmaRing/CTF-WRITE-UP/assets/92077284/991f5acd-0458-4cbf-951a-d706e137eee0)  
 
 **Solution [INA]**  
 1. Pertama download filenya, kebetulan disini memiliki ekstensi **.exe**, maka dari itu saya coba untuk melakukan _static analysis_ menggunakan **IDA**  
 ![image](https://github.com/PlasmaRing/CTF-WRITE-UP/assets/92077284/a02a8426-e106-4079-8c92-55154331641c)  
 ![image](https://github.com/PlasmaRing/CTF-WRITE-UP/assets/92077284/0ba2f4a9-e952-4779-93d2-83dce99c9975)  
-
 2. Disini langsung ditemukan flagnya, namun kita juga bisa menemukan flagnya menggunakan `strings` pada KALI LINUX  
 ![image](https://github.com/PlasmaRing/CTF-WRITE-UP/assets/92077284/31f905ca-1a4c-4dca-a82a-106b51f30287)
 
