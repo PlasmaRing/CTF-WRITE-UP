@@ -65,7 +65,7 @@
 - [Back In My Day](#back-in-my-day)  
 - Mixtape  
 - Know Your Worth  
-- Lost(#lost)
+- [Lost](#lost)
 - Twitch Frogs
 
 ---
