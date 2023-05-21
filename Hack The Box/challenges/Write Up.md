@@ -298,4 +298,252 @@ Mr. Abilgate, the CFO of a Fortune 500 company, has reportedly been the victim o
 In some alternate reality, computers are not electronics-based but instead use air pressure. No electrons are zipping by and instead, a large pneumatic circuit takes care of all the math. In that world, we reverse engineers are not staring countless hours into debuggers and disassemblers but are inspecting the circuits on a valve level, trying to figure out how the particles will behave in weird components and how they are connected. Thinking about it, that doesn't sound too different, does it?
 ```
 
+---
+# Crypto
+## Gonna-Lift-Em-All
 
+**Description**  
+```
+Quick, there's a new custom Pokemon in the bush called "The Custom Pokemon". Can you find out what its weakness is and capture it?
+```
+
+## Ancient Encodings
+
+**Description**  
+```
+Your initialization sequence requires loading various programs to gain the necessary knowledge and skills for your journey. Your first task is to learn the ancient encodings used by the aliens in their communication.
+```
+
+## Perfect Synchronization
+
+**Description**  
+```
+The final stage of your initialization sequence is mastering cutting-edge technology tools that can be life-changing. One of these tools is quipqiup, an automated tool for frequency analysis and breaking substitution ciphers. This is the ultimate challenge, simulating the use of AES encryption to protect a message. Can you break it?
+```
+
+## Weak RSA
+
+**Description**  
+```
+Can you decrypt the message and get the flag?
+```
+
+## Classic, yet complicated!
+
+**Description**  
+```
+Find the plaintext, the key is your flag!
+Flag format : HTB{key in lowercase}
+```
+
+## Brainy's Cipher
+
+**Description**  
+```
+Brainy likes playing around with esoteric programming. He also likes math and has therefore encrypted his very secure password with a popular encryption algorithm. Claiming that his password cannot be retrieved now, he has sent the ciphertext to some of his friends. Can you prove to Brainy that his password can actually be recovered?
+```
+
+## RsaCtfTool
+
+**Description**  
+```
+Crypto is fun ;)
+```
+
+## TwoForOne
+
+**Description**  
+```
+Alice sent two times the same message to Bob.
+```
+
+## Nuclear Sale
+
+**Description**  
+```
+Plutonium Labs is a private laboratory experimenting with plutonium products. A huge sale is going to take place and our intelligence agency is interested in learning more about it. We have managed to intercept the traffic of their mail server. Can you find anything interesting?
+```
+
+## LunaCrypt
+
+**Description**  
+```
+Our astronaut gained access to a key satellite and intercepted an encrypted message. The forensics team also recovered a file that looks like a custom encryption protocol. We're sure that these two elements are linked. Please can you help us reveal the contents of the secret message?
+```
+
+## Space Pirates
+
+**Description**  
+```
+Jones and his crew have started a long journey to discover the legendary treasure left by the guardians of time in the early beginnings of the universe. Mr Jones, though, is wanted by the government for his crimes as a pirate. Our agents entered his
+```
+
+## baby quick maffs
+
+**Description**  
+```
+Wikipedia says "the Rabin cryptosystem has been mathematically proven to be computationally secure against a chosen-plaintext attack as long as the attacker cannot efficiently factor integers", so I created my own cool implementation.
+```
+
+## How The Columns Have Turned
+
+**Description**  
+```
+A day before the memorial of the Dying Sun, Miyuki began talking about Broider, a death squad commander and a friend of Paulie’s capturer. He would be a party guest at Viryr’s palace. After examining a lot of different scenarios, Miyuki came up with a plan in which Paulie would lure Broider to a secluded location so the group could capture him. Following the plan, a wild chase had just begun when the two looked each other in the eye. After an extremely risky maneuver, Paulie outwitted Broider and led him into an alley in Vinyr’s undercity. The plan was a success. Your squad had managed to capture Broider and bring him back to the ship. After hours of interrogation by Ulysses, he revealed the final key to a series of encrypted messages. Can you find a way to decrypt the others? The flag consists entirely of uppercase characters and has the form HTB{SOMETHINGHERE}. You still have to add the {} yourself.
+```
+
+## ElElGamal
+
+**Description**  
+```
+After some minor warnings from IDS, you decide to check the logs to see if anything suspicious is happening. Surprised by what you see, you realise that one of your honeypots has been compromised with a cryptominer. As you look at the processes, you discover a backdoor attached to one of them. The backdoor retrieves the private key from the /key route of a C2. It establishes a session by sending an encrypted initilazation sequence. After the session is established, it waits for commands. The commands are encrypted and executed by the source code you found. Unfortunately, the IDS could not detect the request to /key and the machine was rebooted after the compromise, so the key cannot be found on the stack. Can you find out if any data was exfiltrated from the honeypot to mitigate future attacks?
+```
+
+## Spooky RSA
+
+**Description**  
+```
+It was a Sunday evening when, after years, you managed to understand how RSA works. Unfortunately, that changed when the worst villain ever decided to dress up like RSA and scare people who wanted to learn more about cryptography. But his custom uniform has a hole in it. Can you find it?
+```
+
+## Infinite Descent
+
+**Description**  
+```
+DevOps have come up with a great way to choose primes for RSA and an even better way to established a key for AES.
+Can you find the flaws?
+Flag Format: HTB{flag}
+```
+
+## Ebola Virus
+
+**Description**  
+```
+We suspect that some terrorists have a plan to use the Ebola virus. We have managed to collect an encypted message and its key. Can you help us decrypt the message?
+```
+
+## signup
+
+**Description**  
+```
+The aliens attacked our territory and stole our necessary supplies and kept them in a secure manner. We can get them back, but it requires a lot of data samples. Fortunately, we have some stuff to get back what we need. But, are we lucky enough?!
+```
+
+## BFD56
+
+**Description**  
+```
+At least Delastelle didn't have to worry about bit flipping. p.s. The flag format is HTB{ALL_IN_UPPERCASE}.
+```
+
+## Down the Rabinhole
+
+**Description**  
+```
+Miyuki, wanting to find out more evidence about Draeger and his escape, planned a space trip to the maximum security black hole where Draeger was held captive. Problems though soon arose as the approach to the black hole caused distortions on your electronics. Memories of the traumatic experience you had when the Council guards brutally ripped you from your father’s hands painfully flooded your mind. The one thing you never forgot was the signal he sent you while you were still within range of the planet. Only two packets got through, but since they were encrypted you couldn’t figure out what they were. Now, being more determined than ever to find your father, having gained experience during the missions with the squad, you know that it’s time to decrypt the signal.
+```
+
+## P
+
+**Description**  
+```
+I
+```
+
+## P
+
+**Description**  
+```
+I
+```
+
+## P
+
+**Description**  
+```
+I
+```
+
+## P
+
+**Description**  
+```
+I
+```
+
+## P
+
+**Description**  
+```
+I
+```
+
+## P
+
+**Description**  
+```
+I
+```
+
+## P
+
+**Description**  
+```
+I
+```
+
+## P
+
+**Description**  
+```
+I
+```
+
+## P
+
+**Description**  
+```
+I
+```
+
+## P
+
+**Description**  
+```
+I
+```
+
+## P
+
+**Description**  
+```
+I
+```
+
+## P
+
+**Description**  
+```
+I
+```
+
+## P
+
+**Description**  
+```
+I
+```
+
+## P
+
+**Description**  
+```
+I
+```
+
+## P
+
+**Description**  
+```
+I
+```
