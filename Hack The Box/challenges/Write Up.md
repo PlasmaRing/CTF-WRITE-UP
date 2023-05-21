@@ -143,3 +143,152 @@ Setelah saya coba cek, ternyata setiap charnya tersimpan dan dapat disusun menja
 
 **Flag**  
 `HTB{fortran!}`  
+
+## Eat the Cake!
+
+**Description**  
+```
+Find the Password and enter it in the form HTB{password}
+```
+
+## Baby RE
+
+**Description**  
+```
+Show us your basic skills! (P.S. There are 4 ways to solve this, are you willing to try them all?)
+```
+
+## Ransom
+
+**Description**  
+```
+We received an email from Microsoft Support recommending that we apply a critical patch to our Windows servers. A system administrator downloaded the attachment from the email and ran it, and now all our company data is encrypted. Can you help us decrypt our files?
+```
+
+## You Cant C Me
+
+**Description**  
+```
+Can you see me?
+```
+
+## Baby Crypt
+
+**Description**  
+```
+Give me the key and take what's yours.
+```
+
+## Anti Flag
+
+**Description**  
+```
+Flag? What's a flag?
+```
+
+## IRCWare
+
+**Description**  
+```
+During a routine check on our servers we found this suspicious binary, although when analyzing it we couldn't get it to do anything. We assume it's dead malware, but maybe something interesting can still be extracted from it?
+```
+
+## Sekure Decrypt
+
+**Description**  
+```
+Timmy created a secure decryption program
+```
+
+## Hissss
+
+**Description**  
+```
+Can you slither around the authentication?
+```
+
+## Rebuilding
+
+**Description**  
+```
+You arrive on a barren planet, searching for the hideout of a scientist involved in the Longhir resistance movement. You touch down at the mouth of a vast cavern, your sensors picking up strange noises far below. All around you, ancient machinery whirrs and spins as strange sigils appear and change on the walls. You can tell that this machine has been running since long before you arrived, and will continue long after you're gone. Can you hope to understand its workings?
+```
+
+## Snakecode
+
+**Description**  
+```
+We found this ancient text inscribed on a stone tablet. We believe it describes the history and technology of a mighty but extinct civilization, but we can't be certain as it's written in a dead language. Can you use your specialist knowledge to uncover the truth, and recover their technology?
+```
+
+## Ouija
+
+**Description**  
+```
+You've made contact with a spirit from beyond the grave! Unfortunately, they speak in an ancient tongue of flags, so you can't understand a word. You've enlisted a medium who can translate it, but they like to take their time...
+```
+
+## Secured Transfer
+
+**Description**  
+```
+Ghosts have been sending messages to each other through the aether, but we can't understand a word of it! Can you understand their riddles?
+```
+
+## Potion Master
+
+**Description**  
+```
+After adding the curried eel, your potion is almost complete, your cauldron boiling over. All you need to do now is incant the final spell to finish your masterwork!
+```
+
+## Pseudo
+
+**Description**  
+```
+Do you have enough permissions to get the flag?
+```
+
+## The Vault
+
+**Description**  
+```
+After following a series of tips, you have arrived at your destination; a giant vault door. Water drips and steam hisses from the locking mechanism, as you examine the small display - 'PLEASE SUPPLY PASSWORD'. Below, a typewriter for you to input. You must study the mechanism hard - you might only have one shot...
+```
+
+## Malception
+
+**Description**  
+```
+Attackers have infiltrated our domain and poisoned DNS records to infect users with a ransomware. We weren't able to retrieve any artifacts, but we have a packet capture you could use.
+```
+
+## Teleport
+
+**Description**  
+```
+You've been sent to a strange planet, inhabited by a species with the natural ability to teleport. If you're able to capture one, you may be able to synthesise lightweight teleportation technology. However, they don't want to be caught, and disappear out of your grasp - can you get the drop on them?
+```
+
+## Indefinite
+
+**Description**  
+```
+You hold in one hand an encrypted datastream, and in the other the central core of a Golden Fang communications terminal. Countless spies have risked their lives to steal both the encrypted attack plans, and the technology used to conceal it, and bring them to you for expert analysis. To your horror, as you turn the screws on the core, its defense mechanisms spring to life, concealing and covering its workings. You have minutes to spare before the device destroys itself - can you crack the code?
+```
+
+## Mr. Abilgate
+
+**Description**  
+```
+Mr. Abilgate, the CFO of a Fortune 500 company, has reportedly been the victim of a recent spree of ransomware attacks. The behavior of the malware seems consistent with our current APT target's tactics, but the ransom note makes us think it's a targeted attack. We suspect bad faith from corporate espionage gone wrong. Could you investigate?
+```
+
+## Pneumatic Validator
+
+**Description**  
+```
+In some alternate reality, computers are not electronics-based but instead use air pressure. No electrons are zipping by and instead, a large pneumatic circuit takes care of all the math. In that world, we reverse engineers are not staring countless hours into debuggers and disassemblers but are inspecting the circuits on a valve level, trying to figure out how the particles will behave in weird components and how they are connected. Thinking about it, that doesn't sound too different, does it?
+```
+
+
