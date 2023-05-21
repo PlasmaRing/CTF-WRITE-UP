@@ -144,6 +144,13 @@ Setelah saya coba cek, ternyata setiap charnya tersimpan dan dapat disusun menja
 **Flag**  
 `HTB{fortran!}`  
 
+## Shattered Tablet
+
+**Description**  
+```
+Deep in an ancient tomb, you've discovered a stone tablet with secret information on the locations of other relics. However, while dodging a poison dart, it slipped from your hands and shattered into hundreds of pieces. Can you reassemble it and read the clues?
+```
+
 ## Eat the Cake!
 
 **Description**  
