@@ -13,7 +13,7 @@
 **DATE: 09 JULY 2023**  
 
 **WRITE UP LINK👇**  
-[LINK]()
+[LINK](https://github.com/PlasmaRing/CTF-WRITE-UP/blob/f63454c2183cb3a04055b5509ca0f82d4567b2f2/TechnoFair%2010%20CTF%202023/FILE/CTF_TECHNOFAIR10.0_PWNRGBDITAMBAHIJO.pdf)
 
 ## Solved Probs
 
@@ -44,8 +44,18 @@
 
 ---
 # The Password Quest  
-![image](https://github.com/PlasmaRing/CTF-WRITE-UP/assets/92077284/582f7390-629d-4bf1-bce8-dca24fa83ee6)
-  
+![image](https://github.com/PlasmaRing/CTF-WRITE-UP/assets/92077284/582f7390-629d-4bf1-bce8-dca24fa83ee6)  
+
+**HINT :**  
+```
+follow the traffic lights flag rules:
+
+- when it shows red flag, you're not allowed to submit
+- when it shows green flag, you're ready to go!
+```
+
+**CHALL :** [chall]()  
+
 **Tahap pengerjaan:**  
 1. Download attachment, lalu disini diberikan 31 baris, 7 bit binary. menurut soal ada keyword `display` yang mengarahkan kepada 7 segment display  
 source: https://electronics-fun.com/7-segment-hex-decoder/  
