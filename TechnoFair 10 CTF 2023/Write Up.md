@@ -54,26 +54,9 @@ follow the traffic lights flag rules:
 - when it shows green flag, you're ready to go!
 ```
 
-**CHALL :** [chall]()  
+**CHALL :** [chall](https://github.com/PlasmaRing/CTF-WRITE-UP/blob/0e3b4ce4729c33224c25e01a3760b640dcb2daa5/TechnoFair%2010%20CTF%202023/FILE/chall)  
 
 **Tahap pengerjaan:**  
-1. Download attachment, lalu disini diberikan 31 baris, 7 bit binary. menurut soal ada keyword `display` yang mengarahkan kepada 7 segment display  
-source: https://electronics-fun.com/7-segment-hex-decoder/  
-![image](https://user-images.githubusercontent.com/92077284/221499933-c995527e-5e4e-4ae2-8728-1b7c2fe1f10e.png)  
+1. 
 
-2. Dari sini saya coba menggunakan online decoder : https://www.dcode.fr/7-segment-display dan mendapati hasil yang masih berantakan
-![image](https://user-images.githubusercontent.com/92077284/221500516-184da63f-4392-438a-a2d6-a6992f60ce2d.png)  
-
-3. Dari sini saya memahami bahwa perlu mereverse dari kanan ke kiri untuk tiap binarynya, jadi saya menggunakan https://www.browserling.com/tools/reverse-binary 
-![image](https://user-images.githubusercontent.com/92077284/221501457-5ccef76e-2555-4d0e-a70d-7bf2ad722dd0.png)  
-
-4. Saya menggunakan kembali decoder dan menemukan flagnya, namun karena belum sesuai dengan formatnya, saya merubah rubah dikit untuk hasilnya  
-![image](https://user-images.githubusercontent.com/92077284/221502070-8db6d7fd-ef35-4cf2-842b-51535600da86.png)  
-
-```
-5UEtAM5CEMEMtE55_|t_|5_HEHE
-suetamscememtess_it_is_hehe
-supertranscendentess_it_is_hehe
-```
-
-**FLAG : ARA23{supertranscendentess_it_is_hehe}**
+**FLAG : **
