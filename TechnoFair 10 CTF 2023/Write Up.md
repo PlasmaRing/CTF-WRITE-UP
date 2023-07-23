@@ -157,4 +157,6 @@ if __name__ == "__main__":
         print("NOT FOUND")
 ```
 
-**FLAG : **
+![image](https://github.com/PlasmaRing/CTF-WRITE-UP/assets/92077284/e176b669-145a-4c5a-97f7-8fda70e05884)  
+
+**FLAG : TechnoFairCTF{VOI1@!_TUrn$_ou7_7hE_m19hTy_fla6_1$_@LReADy_p0s$35sed_BY_y0U_AL1_7h1s_71ME^v^}**
