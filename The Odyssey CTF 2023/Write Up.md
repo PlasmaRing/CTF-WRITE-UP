@@ -17,7 +17,6 @@ Concatenate the three parts to get the full flag.
 ```
 
 **Private Video :** [video](https://github.com/PlasmaRing/CTF-WRITE-UP/blob/9802d776064bf7847f9e447bd60675eb2eb1cac5/The%20Odyssey%20CTF%202023/catch_the_fox_CTF_odyssey.zip)  
-
 **CHALL :** [challenge.zip](https://github.com/PlasmaRing/CTF-WRITE-UP/blob/e60271746dc6ac4a27cd3695a72e4879811bdb11/The%20Odyssey%20CTF%202023/challenge.zip)  
 
 **Tahap pengerjaan:**  
