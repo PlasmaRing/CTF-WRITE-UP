@@ -16,15 +16,7 @@ The flag is in three parts. The middle part is a number.
 Concatenate the three parts to get the full flag.
 ```
 
-**HINT :**  
-```
-follow the traffic lights flag rules:
-
-- when it shows red flag, you're not allowed to submit
-- when it shows green flag, you're ready to go!
-```
-
-**CHALL :** [chall]()  
+**CHALL :** [challenge.zip]()  
 
 **Tahap pengerjaan:**  
 1. 
