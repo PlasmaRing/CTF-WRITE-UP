@@ -12,7 +12,7 @@
 **DATE: 02 SEPTEMBER 2023**  
 
 **WRITE UP LINK👇**  
-[LINK]()
+[LINK](https://github.com/PlasmaRing/CTF-WRITE-UP/blob/fb89747886780a0696dc36643f1d4a219380a33e/COMPFEST15%202023/FILE/COMPFEST15_Bude%20Jiang%20Society.pdf)
 
 ## Solved Probs
 
