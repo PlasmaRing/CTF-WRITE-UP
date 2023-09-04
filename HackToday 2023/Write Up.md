@@ -11,7 +11,7 @@
 **DATE: 26 AUGUST 2023**  
 
 **WRITE UP LINK👇**  
-[LINK]()
+[LINK](https://github.com/PlasmaRing/CTF-WRITE-UP/blob/6f14c90b1582c14a5b1b0c8baa67b0404744b938/HackToday%202023/FILE/WRITE%20UP%20HackToday%202023.pdf)
 
 ## Solved Probs
 
@@ -34,4 +34,4 @@
 ● MUA    
 
 ---
-# 
+# Nyicil
