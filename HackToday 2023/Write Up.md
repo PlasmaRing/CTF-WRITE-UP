@@ -18,7 +18,7 @@
 **Reverse Engineering**  
 ● OnlyAdminCanSee  
 ● kurang-lebih+  
-● Nyicil *[SOLVED AFTER COMPETITION END]*  
+● Nyicil **[SOLVED AFTER COMPETITION END]**  
   
 **Web Exploitation**  
 ● LogInspek 
