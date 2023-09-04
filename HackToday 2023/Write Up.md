@@ -16,8 +16,8 @@
 ## Solved Probs
 
 **Reverse Engineering**  
-● OnlyAdminCanSee
-● kurang-lebih+
+● OnlyAdminCanSee  
+● kurang-lebih+  
 ● Nyicil *[SOLVED AFTER COMPETITION END]*  
   
 **Web Exploitation**  
