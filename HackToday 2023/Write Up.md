@@ -35,3 +35,15 @@
 
 ---
 # Nyicil
+![image](https://github.com/PlasmaRing/CTF-WRITE-UP/assets/92077284/5e28f78b-af96-4042-bd2e-74dca99030cc)  
+1. Pertama-tama diberikan sebuah file ELF, dan disini merupakan flag checker namun dibatasi panjangnya sebanyak 10 karakter
+   ![image](https://github.com/PlasmaRing/CTF-WRITE-UP/assets/92077284/d6fc6262-8e7e-491e-a79b-9d9ea0a4b576)  
+   Kesimpulan dari file ini:  
+   * BENAR = seluruhnya benar  
+   * ADA YANG BENAR = terdapat bagian yang benar  
+   * MENYICIL TIDAK PERLU BANYAK = panjang karakter melebihi 10  
+2. Dari situlah kita bisa melakukan **bruteforce** dan _wordlist_ karena dari awal sudah diketahui bahwa format flag adalah **hacktoday{*}**, maka tinggal dicari didalamnya apa
+
+   Script untuk generate wordlist:
+   
+4. 
