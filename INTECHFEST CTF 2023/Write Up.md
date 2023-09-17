@@ -7,7 +7,7 @@
 **DATE: 9 SEPT - 10 SEPT 2023**  
 
 **WRITE UP LINK👇**  
-[LINK]()
+[LINK](https://github.com/PlasmaRing/CTF-WRITE-UP/blob/e4036bc1a715ffe2bb905ce5d95fcd9d141ee1ba/INTECHFEST%20CTF%202023/FILE/WRITE%20UP%20INTECHFEST%202023.pdf)
 
 ## Solved Probs
 
