@@ -7,14 +7,28 @@
 **DATE: 30 SEPT 2023**  
 
 **WRITE UP LINK👇**  
-[LINK]()
+[LINK](https://github.com/PlasmaRing/CTF-WRITE-UP/blob/ba98ae558e556a76b5b011491d1458fc85e4d4c5/SLASHROOT%207%20CTF%202023/FILE/WRITE%20UP%20CTF%20SLASHROOT7%202023.pdf)  
 
 ## Solved Probs
 
-**something**  
-●   
+**WEB EXPLOITATION**  
+● VeryLight  
+● give me feedback  
 
-**🧮 Miscellaneous**  
-● Capture The Flag  
+**FORENSIC**  
+● Zebra Cross  
 
+**REVERSE ENGINEERING**  
+● Asem  
+● Sanca  
+● Lazy  
+
+**MISC**  
+● Welcome  
+● RGX1337  
+● SangChall  
+
+**OSINT**  
+● Waka Waka eh eh  
+● Kode Rahasia  
 
